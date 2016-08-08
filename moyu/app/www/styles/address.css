@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+.moyu-addrs { width: 100%; float: left; clear: both; overflow: hidden; }
+.moyu-addrs { width: 110%; }
+.moyu-addrs li { width: 236px; height: 124px; float: left; border: 1px #cccccc solid; margin: 0 20px 20px 0; padding: 15px; font-size: 12px; color: #999999; position: relative; transition: background 0.3s; }
+.moyu-addrs li:hover { background: #f5f5f5; }
+.moyu-addrs li.checked { border-color: #df1f26; background: #ffffff; }
+.moyu-addrs li i.ok { width: 54px; height: 53px; position: absolute; right: 0; bottom: 0; background: url(../images/form/address.png) no-repeat -6px -7px; display: none; }
+.moyu-addrs li.checked .ok { display: block; }
+.moyu-addrs li.checked .isdefault { display: none; }
+.moyu-addrs h4 { font-size: 16px; color: #666666; font-weight: normal; padding-bottom: 6px; }
+.moyu-addrs li.add a { width: 100%; height: 100%; display: block; line-height: 160px; text-align: center; overflow: hidden; color: #666666; }
+.moyu-addrs li.add i { width: 30px; height: 30px; position: absolute; left: 120px; top: 50px; background: url(../images/form/address.png) no-repeat -60px -60px; display: block; }
+.moyu-addrs li .action { width: 92%; display: none; padding-bottom: 6px; position: absolute; left: 15px; bottom: 0; }
+.moyu-addrs li:hover .action { display: block; }
+.moyu-addrs li .action a { margin-right: 12px; }
+.moyu-addrs li .isdefault { float: right; }
+
+.moyu-add-address-box { width: 100%; height: 100%; position: absolute; left: 0; top: 0; background: url(../images/bg/blank50.png); z-index: 10; }
+.moyu-add-address { width: 730px; height: 562px; position: fixed; left: 50%; top: 50%; background: #ffffff; margin: -303px 0 0 -387px; padding: 22px; }
+.moyu-add-address .title { height: 50px; font-size: 18px; line-height: 18px; }
+.moyu-add-address .title span { border-left: 3px #e73d4d solid; padding-left: 10px; }
+.moyu-add-address .input { width: 708px; height: 48px; line-height: 48px; color: #000000; border: 1px #e4e4e4 solid; padding: 0 10px; transition: background 0.3; font-size: 16px; }
+.moyu-add-address li { position: relative; padding: 8px 0; }
+.moyu-add-address li .t { position: absolute; left: 15px; top: 0; background: #ffffff; color: #999999; line-height: 100%; padding: 0 5px; transition: color 0.3; }
+.moyu-add-address li label .t { top: 25px; }
+.moyu-add-address li:hover .input { background: #f8f8f8; }
+.moyu-add-address lihover .t { color: #666666; background: #f8f8f8; }
+.moyu-add-address li.focus .input { border-color: #f298a0; background: #ffffff; }
+.moyu-add-address li.focus .t { color: #e73d4d; background: #ffffff; }
+.moyu-add-address .china-addr-box { width: 105%; height: 48px; }
+.moyu-add-address .china-addr { width: 230px; height: 48px; line-height: 48px; color: #000000; border: 1px #e4e4e4 solid; float: left; margin-right: 17px; position: relative; }
+.moyu-add-address .china-addr a.noselect .t { color: #999999; }
+.moyu-add-address .china-addr a { width: 200px; height: 48px; display: block; padding: 0 15px; }
+.moyu-add-address .china-addr a .t { display: block; line-height: 48px; color: #000000; }
+.moyu-add-address .china-addr .arrow { width: 45px; height: 48px; display: block; position: absolute; right: 0; top: 0; }
+.moyu-add-address .china-addr .arrow i { width: 18px; height: 9px; position: absolute; right: 15px; top: 20px; background: url(../images/form/address.png) no-repeat 0 -79px; display: block; }
+.moyu-add-address .china-addr a:hover .arrow { background: #f5f5f5; border-left: 1px #e4e4e4 solid; }
+.moyu-add-address .china-addr ul { width: 100%; max-height: 244px; border: 1px #e4e4e4 solid; z-index: 10; background: #ffffff; position: absolute; left: -1px; top: 48px; overflow-x: hidden; overflow-y: auto; display: none; }
+.moyu-add-address .china-addr li { height: 40px; line-height: 40px; border-bottom: 1px #e4e4e4 solid; padding: 0 15px; color: #666666; cursor: pointer; font-size: 14px; }
+.moyu-add-address .china-addr li:hover { background: #df1f26; color: #ffffff; }
+.moyu-add-address .btns { text-align: center; padding-top: 30px; }
+.moyu-add-address .btns button { width: 300px; text-align: center; font-size: 18px; height: 50px; cursor: pointer; margin: 0 20px; transition: background 0.3s; }
+.moyu-add-address .btns .ok { color: #ffffff; background: #df1f26; border: 1px #df1f26 solid; }
+.moyu-add-address .btns .ok:hover { background: #ab0006; }
+.moyu-add-address .btns .canncel { color: #666666; background: #ffffff; border: 1px #cccccc solid; }
+.moyu-add-address .btns .canncel:hover { background: #eaeaea; }

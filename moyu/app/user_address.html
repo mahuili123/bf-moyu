@@ -1,0 +1,39 @@
+<!doctype html>
+<html class="user-center">
+<head>
+    <!--@@ include("inc/head.html", {"title": "收货地址管理", "keywords": "keywords", "description": "description"}) -->
+    <!-- build:css /www/styles/user.css -->
+    <link type="text/css" rel="stylesheet" href="/www/styles/get_express.css">
+    <link type="text/css" rel="stylesheet" href="/www/styles/address.css">
+    <link type="text/css" rel="stylesheet" href="/www/styles/user.css">
+    <!-- endbuild -->
+</head>
+<body>
+    <div class="container row">
+    <!--@@ include("inc/header.html") -->
+    <div class="mainbody row bg-eee">
+        <div class="wrapper">
+            <div class="user-layout row">
+                <div class="sidebar">
+                    <!--@@ include("inc/user_nav.html") -->
+                </div>
+                <div class="main">
+                    <div class="title">
+                        收货地址管理
+                    </div>
+                    <div class="moyu-addrs js-addrs"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--@@ include("inc/footer.html") -->
+</div>
+<!--@@ include("inc/static.html") -->
+<!-- build:js /www/scripts/user_address.js -->
+<script src="/www/scripts/ajax.js"></script>
+<script src="/www/scripts/china_addr.js"></script>
+<script src="/www/scripts/address.js"></script>
+<script src="/www/scripts/user_address.js"></script>
+<!-- endbuild -->
+</body>
+</html>

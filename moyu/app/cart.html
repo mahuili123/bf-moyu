@@ -1,0 +1,194 @@
+<!doctype html>
+<html class="cart">
+<head>
+<!--@@ include("inc/head.html", {"title": "购物车", "keywords": "keywords", "description": "description"}) -->
+<!-- build:css /www/styles/cart.css -->
+<link type="text/css" rel="stylesheet" href="/www/styles/cart.css">
+<!-- endbuild -->
+</head>
+
+<body>
+    <div class="container row">
+        <!--@@ include("inc/header.html") -->
+        <div class="mainbody row bg-eee">
+            <div class="wrapper">
+                <!-- 购物车 -->
+                <div class="cart-box row">
+
+                    <div class="cart-list row">
+                        <h1 class="row f-18 c-df1f26"><span>全部商品</span></h1>
+                        <div class="cart-table row f-14">
+                            <table border="0" cellspacing="0" cellpadding="0">
+                                <thead>
+                                    <tr>
+                                        <th class="w1 t-c">
+                                            <label>
+                                                <input type="checkbox" class="js-rewrite check-all">
+                                                全选
+                                            </label>
+                                        </th>
+                                        <th class="w2 t-c"><span class="pl80">商品</span></th>
+                                        <th class="w3">单价（元）</th>
+                                        <th class="w4">数量</th>
+                                        <th class="w5">小计（元）</th>
+                                        <th class="w6">操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="js-cart-list">
+                                    <tr>
+                                        <td colspan="6" class="loading">正在准备购物车信息，请稍后...</td>
+                                    </tr>
+                                    <!--tr>
+                                        <td class="t-c"><label><input type="checkbox" class="js-rewrite" disabled></label></td>
+                                        <td>
+                                            <div class="product-info">
+                                                <a href="#">
+                                                    <div class="image"><img src="www/images/detail/2s.jpg" width="98" height="98"></div>
+                                                    <div class="info">
+                                                        <h3 class="f-14">小黄人耳机</h3>
+                                                        <p class="c-666">颜色：黄白  尺寸：小号</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td valign="top" class="c-e73d4d">128.00</td>
+                                        <td valign="top">
+                                            <div class="moyu-input-number disabled" data-min="1" data-max="4">
+                                                <a href="javascript:;" class="cut">-</a>
+                                                <input type="text" value="0" disabled>
+                                                <a href="javascript:;" class="add">+</a>
+                                            </div>
+                                            <div class="js-stock-tips c-999">暂时缺货</div>
+                                        </td>
+                                        <td valign="top" class="c-e73d4d">256.00</td>
+                                        <td valign="top"><a href="javascript:;">删除</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="t-c"><label><input type="checkbox" class="js-rewrite"></label></td>
+                                        <td>
+                                            <div class="product-info">
+                                                <a href="#">
+                                                    <div class="image"><img src="www/images/detail/4s.jpg" width="98" height="98"></div>
+                                                    <div class="info">
+                                                        <h3 class="f-14">小黄人耳机</h3>
+                                                        <p class="c-666">颜色：黄白  尺寸：小号</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td valign="top" class="c-e73d4d">128.00</td>
+                                        <td valign="top">
+                                            <div class="moyu-input-number" data-min="1" data-max="4">
+                                                <a href="javascript:;" class="cut">-</a>
+                                                <input type="text" value="1">
+                                                <a href="javascript:;" class="add">+</a>
+                                            </div>
+                                        </td>
+                                        <td valign="top" class="c-e73d4d">256.00</td>
+                                        <td valign="top"><a href="javascript:;">删除</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="t-c"><label><input type="checkbox" class="js-rewrite"></label></td>
+                                        <td>
+                                            <div class="product-info">
+                                                <a href="#">
+                                                    <div class="image"><img src="www/images/detail/3s.jpg" width="98" height="98"></div>
+                                                    <div class="info">
+                                                        <h3 class="f-14">小黄人耳机</h3>
+                                                        <p class="c-666">颜色：黄白  尺寸：小号</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td valign="top" class="c-e73d4d">128.00</td>
+                                        <td valign="top">
+                                            <div class="moyu-input-number" data-min="1" data-max="4">
+                                                <a href="javascript:;" class="cut">-</a>
+                                                <input type="text" value="1">
+                                                <a href="javascript:;" class="add">+</a>
+                                            </div>
+                                        </td>
+                                        <td valign="top" class="c-e73d4d">256.00</td>
+                                        <td valign="top"><a href="javascript:;">删除</a></td>
+                                    </tr-->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="cart-total row f-18">
+                        <span class="text">已选商品：<em class="c-e73d4d" id="js-total-num">0</em>件</span>
+                        <span class="text">合计（不含运费）：<em class="c-e73d4d f-24" id="js-total-price">0.00</em><em class="c-e73d4d">元</em></span>
+                        <button class="cart-buy btn-red-large" id="js-pay">去结算</button>
+                    </div>
+
+                </div>
+                <!-- /购物车 -->
+            </div>
+        </div>
+        <!--@@ include("inc/footer.html") -->
+    </div>
+    <script>
+        var $CONFIG = {
+            urls: {
+                check_order: ['GET', 'json', '/www/data/check_order.json'], //下单接口
+                delete: ['GET', 'json', '/www/data/succ.json']   //删除购物车
+            },
+            data: [{
+                id: '1',
+                product: {
+                    pid: '4135678',
+                    name: '小黄仁耳机',
+                    info: '颜色：黄白  尺寸：小号',
+                    url: '/detail.html',
+                    image: '/www/images/detail/2s.jpg'
+                },
+                price: '128.00',
+                num: '1',
+                total: '128.00',
+				error_msg: '最多可购买5件',
+                min_num: '1',
+                max_num: '5',
+                checked: '1'
+            }, {
+                id: '3',
+                product: {
+                    pid: '4135678',
+                    name: '小黄仁耳机',
+                    info: '颜色：黄白  尺寸：小号',
+                    url: '/detail.html',
+                    image: '/www/images/detail/2s.jpg'
+                },
+                price: '128.00',
+                num: '0',
+                total: '0.00',
+				error_msg: '库存不足',
+                min_num: '0',
+                max_num: '0',
+                checked: '0'
+            }, {
+                id: '2',
+                product: {
+                    pid: '4135678',
+                    name: '小黄仁耳机',
+                    info: '颜色：黄白  尺寸：小号',
+                    url: '/detail.html',
+                    image: '/www/images/detail/3s.jpg'
+                },
+                price: '1.23',
+                num: '1',
+                total: '1.23',
+				error_msg: '最多可购买4件',
+                min_num: '1',
+                max_num: '4',
+                checked: '0'
+            }]
+        };
+    </script>
+    <!--@@ include("inc/static.html") -->
+    <!-- build:js /www/scripts/cart.js -->
+    <script src="/www/scripts/plugins/form/checkbox_radio.js"></script>
+    <script src="/www/scripts/ajax.js"></script>
+    <script src="/www/scripts/cart.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

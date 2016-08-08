@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+.mainbody { padding-bottom: 40px; }
+.cart-box { padding-top: 20px; }
+.cart-list, .cart-total { background: #ffffff; }
+.cart-list { width: 1186px; padding: 0 20px; margin-bottom: 20px; }
+.cart-list h1 { font-weight: normal; line-height: 60px; }
+.cart-list h1 span { border-bottom: 2px #df1f26 solid; padding: 0 20px; float: left; position: relative; top: 1px; }
+
+.cart-table { border-top: 1px #cccccc solid; }
+.cart-table table { width: 100%; text-align: center; }
+.cart-table thead th { height: 38px; color: #666666; font-weight: normal; }
+.cart-table tbody td { padding: 20px; border-top: 1px #cccccc solid; transition: background 0.3s; }
+.cart-table tbody td.loading { padding: 100px 0; background: #f8f8f8; }
+.cart-table .t-c { text-align: left; }
+.cart-table .pl80 { padding-left: 80px; }
+.cart-table tbody tr:hover td { background: #f8f8f8; }
+
+.w1 { width: 60px; padding-left: 20px }
+.w2 { width: 510px; }
+.w3 { width: 140px; }
+.w4 { width: 170px; }
+.w5 { width: 160px; }
+.w6 { width: 126px; }
+
+.moyu-input-number { width: 94px; height: 28px; margin: 0 auto; border: 1px #cccccc solid; overflow: hidden; transition: background 0.3s; }
+.moyu-input-number:hover { background: #ffffff; }
+.moyu-input-number a { width: 28px; height: 28px; float: left; line-height: 26px; font-size: 14px; text-align: center; }
+.moyu-input-number input { width: 38px; height: 28px; font-size: 14px; line-height: 40px; border: 0; text-align: center; margin: 0; padding: 0; float: left; background: none; }
+.moyu-input-number.disabled a { color: #999999; }
+.moyu-input-number.disabled:hover { background: none; }
+
+.product-info { width: 454px; float: left; padding: 0 28px; text-align: left; float: left; }
+.product-info a { width: 100%; float: left; }
+.product-info .image { width: 98px; height: 98px; overflow: hidden; float: left; border: 1px #eeeeee solid; }
+.product-info .info { width: 340px; float: right; }
+.product-info .info p { margin: 0; padding: 0; }
+
+.cart-total { height: 50px; overflow: hidden; line-height: 50px; text-align: right; }
+.cart-total .text { padding-right: 30px; }
+.cart-buy { width: 230px; text-align: center; }
+.cart-total em { font-style: normal; }

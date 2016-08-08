@@ -1,0 +1,237 @@
+<!doctype html>
+<html class="user-center">
+<head>
+<!--@@ include("inc/head.html", {"title": "暴风超体电视F1", "keywords": "keywords", "description": "description"}) -->
+<!-- build:css /www/styles/user.css -->
+<link type="text/css" rel="stylesheet" href="/www/styles/get_express.css">
+<link type="text/css" rel="stylesheet" href="/www/styles/user.css">
+<!-- endbuild -->
+</head>
+
+<body>
+    <div class="container row">
+        <!--@@ include("inc/header.html") -->
+        <div class="mainbody row bg-eee">
+            <div class="wrapper">
+                <div class="user-layout row">
+                    <div class="sidebar">
+                        <!--@@ include("inc/user_nav.html") -->
+                    </div>
+                    <div class="main">
+                        <div class="order-nav row">
+                            <ul>
+                                <li class="current"><a href="#">全部订单</a></li>
+                                <li><span class="line"></span></li>
+                                <li><a href="#">待付款<span class="num">3</span></a></li>
+                                <li><span class="line"></span></li>
+                                <li><a href="#">待发货</a></li>
+                                <li><span class="line"></span></li>
+                                <li><a href="#">待签收</a></li>
+                                <li><span class="line"></span></li>
+                                <li><a href="#">已取消</a></li>
+                            </ul>
+                            <div class="order-search">
+                                <form>
+                                    <input type="text" placeholder="订单号/商品名称">
+                                    <button><i class="icon-24 icon-24-search"></i><span>搜索</span></button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="order-table">
+                            <table border="0" cellspacing="0" cellpadding="0" class="order-table-thead row">
+                                <tr>
+                                    <th class="w1">&nbsp;</th>
+                                    <th class="w2">数量</th>
+                                    <th class="w3 right-line">金额</th>
+                                    <th class="w4 right-line">应付款</th>
+                                    <th class="w5 right-line">收货人</th>
+                                    <th class="w6 right-line">状态</th>
+                                    <th class="w7">操作</th>
+                                </tr>
+                            </table>
+                            <div class="order-table-list row">
+                                <div class="empty-order">
+                                    <table>
+                                        <tr>
+                                            <td><img src="www/images/user/empty-order.png" width="128" height="128"></td>
+                                            <td class="f-18">
+                                                <span class="f-24">没有符合条件的订单！</span><br>
+                                                <span class="cl">你可以：</span>
+                                                1. 尝试其他搜索条件<br>
+                                                2. 去其它地方逛逛： <a href="#">首页</a> 
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="item">
+                                    <div class="item-title">
+                                        <span class="t">下单时间：2015-1-23  18:38</span>
+                                        <span class="n">订单号：836283682</span>
+                                    </div>
+                                    <table border="0" cellspacing="0" cellpadding="0" class="row">
+                                        <tr>
+                                            <td valign="top" class="right-line ptb-20">
+                                                <ul>
+                                                    <li class="bline-item row first">
+                                                        <table border="0" cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                                <td class="w1">
+                                                                    <div class="product-info">
+                                                                        <a href="#">
+                                                                            <div class="image"><img src="www/images/detail/2s.jpg" width="98" height="98"></div>
+                                                                            <div class="info">
+                                                                                <h3 class="f-14">小黄人耳机</h3>
+                                                                                <p class="c-666">颜色：黄白  尺寸：小号</p>
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="w2 t-c c-999" valign="top">×1</td>
+                                                                <td class="w3 t-c c-999" valign="top">
+                                                                    &yen; 79.00 
+                                                                    <a href="#" class="apply-back">申请退货</a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </li>
+                                                    <li class="bline-item row">
+                                                        <table border="0" cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                                <td class="w1">
+                                                                    <div class="product-info">
+                                                                        <a href="#">
+                                                                            <div class="image"><img src="www/images/detail/4s.jpg" width="98" height="98"></div>
+                                                                            <div class="info">
+                                                                                <h3 class="f-14">小黄人耳机</h3>
+                                                                                <p class="c-666">颜色：黄白  尺寸：小号</p>
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="w2 t-c c-999" valign="top">×1</td>
+                                                                <td class="w3 t-c c-999" valign="top">&yen; 79.00</td>
+                                                            </tr>
+                                                        </table>
+                                                    </li>
+                                                    <li class="row last">
+                                                        <table border="0" cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                                <td class="w1">
+                                                                    <div class="product-info">
+                                                                        <a href="#">
+                                                                            <div class="image"><img src="www/images/detail/1s.jpg" width="98" height="98"></div>
+                                                                            <div class="info">
+                                                                                <h3 class="f-14">小黄人耳机</h3>
+                                                                                <p class="c-666">颜色：黄白  尺寸：小号</p>
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="w2 t-c c-999" valign="top">×1</td>
+                                                                <td class="w3 t-c c-999" valign="top">&yen; 79.00</td>
+                                                            </tr>
+                                                        </table>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                            <td valign="top" class="w4 t-c right-line ptb-20">
+                                                <span class="cl c-df1f26 f-18">¥ 158.00</span>
+                                                <span class="cl c-999">含运费：5.00</span>
+                                                <span class="bline"></span>
+                                                <span class="cl c-999">在线支付</span>
+                                            </td>
+                                            <td valign="top" class="w5 t-c right-line ptb-20">
+                                                <span class="cl">陈鑫</span>
+                                                <span class="cl c-999">138****3829</span>
+                                            </td>
+                                            <td valign="top" class="w6 t-c right-line ptb-20">
+                                                <span class="cl c-df1f26 js-status">等待支付</span>
+                                                <span class="cl c-999">已取消</span>
+                                                <span class="cl c-999">交易关闭</span>
+                                                <span class="cl c-999">支付超时</span>
+                                                <span class="cl c-999">已付款</span>
+                                                <span class="cl c-df1f26">等待商家发货</span>
+                                                <span class="cl c-999">商家已发货</span>
+                                                <span class="cl c-999">已签收</span>
+                                                <span class="cl c-999">交易完成</span>
+                                                <span class="cl c-999">商家取消订单</span>
+                                                <span class="cl c-df1f26"><a href="javascript:;" class="get-express-info" data-name="DPM" data-number="123456">查看物流</a></span>
+                                                <span class="cl c-df1f26">退款中</span>
+                                                <span class="cl c-999">已退款</span>
+                                                <span class="cl">订单详情</span>
+                                            </td>
+                                            <td valign="top" class="w7 t-c ptb-20">
+                                                <span class="cl c-999 js-count-time" data-left="3000">还剩1小时28分</span>
+                                                <span class="cl js-btn-pay-box"><a href="/" class="btn-list-pay">付款</a></span>
+                                                <span class="cl"><a href="/" class="c-999">取消订单</a></span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="item">
+                                    <div class="item-title">
+                                        <span class="t">下单时间：2015-1-23  18:38</span>
+                                        <span class="n">订单号：836283682</span>
+                                    </div>
+                                    <table border="0" cellspacing="0" cellpadding="0" class="row">
+                                        <tr>
+                                            <td valign="top" class="right-line ptb-20">
+                                                <ul>
+                                                    <li class="row first last">
+                                                        <table border="0" cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                                <td class="w1">
+                                                                    <div class="product-info">
+                                                                        <a href="#">
+                                                                            <div class="image"><img src="www/images/detail/1s.jpg" width="98" height="98"></div>
+                                                                            <div class="info">
+                                                                                <h3 class="f-14">小黄人耳机</h3>
+                                                                                <p class="c-666">颜色：黄白  尺寸：小号</p>
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="w2 t-c c-999" valign="top">×1</td>
+                                                                <td class="w3 t-c c-999" valign="top">&yen; 79.00</td>
+                                                            </tr>
+                                                        </table>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                            <td valign="top" class="w4 t-c right-line ptb-20">
+                                                <span class="cl c-df1f26 f-18">¥ 158.00</span>
+                                                <span class="cl c-999">含运费：5.00</span>
+                                                <span class="bline"></span>
+                                                <span class="cl c-999">在线支付</span>
+                                            </td>
+                                            <td valign="top" class="w5 t-c right-line ptb-20">
+                                                <span class="cl">陈鑫</span>
+                                                <span class="cl c-999">138****3829</span>
+                                            </td>
+                                            <td valign="top" class="w6 t-c right-line ptb-20">
+                                                <span class="cl c-df1f26">等待支付</span>
+                                                <span class="cl">订单详情</span>
+                                            </td>
+                                            <td valign="top" class="w7 t-c ptb-20">
+                                                <span class="cl c-999">还剩1小时28分</span>
+                                                <span class="cl"><a href="/" class="btn-list-pay">付款</a></span>
+                                                <span class="cl"><a href="/" class="c-999">取消订单</a></span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--@@ include("inc/footer.html") -->
+    </div>
+    <!--@@ include("inc/static.html") -->
+    <!-- build:js /www/scripts/user_order_list.js -->
+    <script src="/www/scripts/plugins/get_express/index.js"></script>
+    <script src="/www/scripts/user_order_list.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

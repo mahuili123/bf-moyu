@@ -1,0 +1,85 @@
+<!doctype html>
+<html class="user-center">
+<head>
+    <!--@@ include("inc/head.html", {"title": "我的余额", "keywords": "keywords", "description": "description"}) -->
+    <!-- build:css /www/styles/user.css -->
+    <link type="text/css" rel="stylesheet" href="/www/styles/get_express.css">
+    <link type="text/css" rel="stylesheet" href="/www/styles/user.css">
+    <!-- endbuild -->
+</head>
+<body>
+    <div class="container row">
+    <!--@@ include("inc/header.html") -->
+    <div class="mainbody row bg-eee">
+        <div class="wrapper">
+            <div class="user-layout row">
+                <div class="sidebar">
+                    <!--@@ include("inc/user_nav.html") -->
+                </div>
+                <div class="main balance-main">
+                   <div class="balance-title">
+                       <h3 class="f-18 f-n fl">可用余额：<span class="c-df1f26">0元</span></h3>
+                       <span class="c-999 f-14 fl balance-info">(请在有效期内使用：2016-09-25 00:00:00~2016-10-15 23:59:59)</span>
+                       <a href="#" class="fr">余额使用说明 &raquo; </a>
+                   </div>
+                    <div class="balance-box">
+                        <div class="balance-title balance-head">
+                            <h3 class="f-18 f-n fl">收支明细</h3>
+                            <a href="javascript:;" class="fr change-code f-12 js-input-code">兑换码</a>
+                        </div>
+                        <table cellspacing="0" cellpadding="0" class="balance-table">
+                            <thead>
+                                <tr>
+                                    <th class="w1 f-n">时间</th>
+                                    <th class="w2 f-n">存入</th>
+                                    <th class="w3 f-n">支出</th>
+                                    <th class="w4 f-n">备注</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2016-06-11    12:56:23</td>
+                                    <td>--</td>
+                                    <td>50</td>
+                                    <td class="t-l">活动领取红包过期失效</td>
+                                </tr>
+                                <tr>
+                                    <td>2016-06-10    12:56:23</td>
+                                    <td>20</td>
+                                    <td>--</td>
+                                    <td class="t-l">订单 &lt;12232444&gt; 未支付返还</td>
+                                </tr>
+                                <tr>
+                                    <td>2016-06-09    12:56:23</td>
+                                    <td>--</td>
+                                    <td>50</td>
+                                    <td class="t-l">订单 &lt;12232444&gt; 使用余额</td>
+                                </tr>
+                                <tr>
+                                    <td>2016-06-11    12:56:23</td>
+                                    <td>10</td>
+                                    <td>--</td>
+                                    <td class="t-l">订单 &lt;12232444&gt; 返现存入余额</td>
+                                </tr>
+                                <tr>
+                                    <td>2016-06-11    12:56:23</td>
+                                    <td>10</td>
+                                    <td>--</td>
+                                    <td class="t-l">暴风十周年抽奖红包存入余额</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!--@@ include("inc/pager.html") -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--@@ include("inc/footer.html") -->
+</div>
+<!--@@ include("inc/static.html") -->
+<!-- build:js /www/scripts/my_balance.js -->
+<script src="/www/scripts/my_balance.js"></script>
+<!-- endbuild -->
+</body>
+</html>

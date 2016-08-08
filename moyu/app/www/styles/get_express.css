@@ -1,0 +1,12 @@
+.moyu-show-express { width: 330px; position: absolute; border: 1px #df1f26 solid; border-radius: 5px; background: #ffffff; z-index: 11; padding-bottom: 10px; }
+.moyu-show-express h4 { width: 306px; margin: 0 auto; font-size: 14px; color: #666666; text-align: center; font-weight: normal; border-bottom: 1px #cccccc solid; line-height: 46px; }
+.moyu-show-express .express-list { width: 306px; height: 276px; overflow-x: hidden; overflow-y: auto; font-size: 13px; margin: 0 auto; }
+.moyu-show-express .express-list ul { padding-left: 5px; }
+.moyu-show-express .express-list li { position: relative; padding: 0 15px; line-height: 22px; }
+.moyu-show-express i { display: block; position: absolute; background-image: url(../images/global/show-express.png); background-repeat: no-repeat; }
+.moyu-show-express p { margin-bottom: 0; }
+.moyu-show-express .timer { width: 100%; display: block; font-size: 12px; text-align: right; color: #999999; }
+.moyu-show-express .i-arrow { width: 17px; height: 8px; background-position: 0 0; left: 50%; top: -8px; margin-left: -8px; }
+.moyu-show-express .i-round { width: 5px; height: 5px; background-position: -29px -11px; left: 0; top: 8px; }
+.moyu-show-express .first { color: #df1f26; }
+.moyu-show-express .first .i-round { background-position: -21px -3px; }

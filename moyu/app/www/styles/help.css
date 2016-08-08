@@ -1,0 +1,26 @@
+.mainbody{ padding-bottom: 0;}
+.wrapper{  width: 1226px; margin: 0 auto;}
+.help-wrapper{ background-color: #EEEEEE; height: 100%; overflow: hidden; zoom: 1; clear: both; padding-bottom: 30px;}
+.wrapper-left{ width: 178px; height: 100%; overflow: hidden; float: left; margin-right: 16px; background-color: #fff; min-height: 530px; padding-bottom: 50px; margin-top: 15px;}
+.wrapper-right{ width: 1032px; height: 100%; /* overflow: hidden; */ float: left; background-color: #fff; padding-bottom: 50px;  min-height: 530px;  margin-top: 15px;}
+.menu h1{ padding-left: 28px; padding-top: 21px; padding-bottom: 21px; border-bottom: 1px solid #ccc; font-weight: normal; color: #000;margin-bottom: 20px;}
+.menu dl{ padding-left: 28px; padding-bottom: 20px;}
+.menu dd{ line-height: 28px;}
+.menu dd.cur a{ color: #df1f26;}
+.menu dt{ font-weight: bold;}
+.help-box{ padding: 15px 30px;}
+.help-box h2{ color: #000; height: 36px; line-height: 36px; font-weight: normal; margin-bottom: 30px;}
+.help-box h3{ font-weight: normal; margin: 10px 0; font-size: 18px;}
+.help-box p{  margin: 10px 0;  font-size: 14px; color: #666666; padding-left: 15px;}
+.help-box img{ max-width: 100%; max-height: 100%; margin: 20px auto;  display: block;}
+.help-box dd,.help-box ol>li{ font-size: 14px; line-height: 28px; color: #666666; padding-left: 15px;}
+.h4-step{ padding-left: 15px; font-weight: normal;}
+table{ width: 100%; border-right: 1px solid #cccccc; border-bottom: 1px solid #cccccc;}
+table td,table th { border: 1px solid #ccc; text-align: center; color: #666;}
+table th { height: 50px; line-height: 50px; font-weight: normal; border-bottom: 0; border-right: 0;}
+table td { padding: 10px 0; border-bottom: 0;  border-right: 0;}
+table td .div1 { border-bottom: 1px solid #ccc; padding-bottom: 10px;}
+ table td div { color: #666;padding: 0 10px; padding-top: 10px;min-height: 74px;}
+table td .div2 { line-height: 60px;}
+table td .div-o{ line-height: 74px;}
+

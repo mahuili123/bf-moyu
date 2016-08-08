@@ -1,0 +1,143 @@
+<!doctype html>
+<html class="user-center">
+<head>
+    <!--@@ include("inc/head.html", {"title": "订单详细", "keywords": "keywords", "description": "description"}) -->
+    <!-- build:css /www/styles/user.css -->
+    <link type="text/css" rel="stylesheet" href="/www/styles/get_express.css">
+    <link type="text/css" rel="stylesheet" href="/www/styles/user.css">
+    <!-- endbuild -->
+</head>
+<body>
+    <div class="container row">
+    <!--@@ include("inc/header.html") -->
+    <div class="mainbody row bg-eee">
+        <div class="wrapper">
+            <div class="user-layout row">
+                <div class="sidebar">
+                    <!--@@ include("inc/user_nav.html") -->
+                </div>
+                <div class="main main-nopadding">
+                    <div class="page-title page-padding">
+                        订单号：12258642717
+                        <span class="c-999 status">状态：<span class="c-df1f26">已取消</span></span>
+                        <!--a href="#" class="normal-link">联系客服</a>
+                        <a href="#" class="normal-link normal-link-g">取消订单</a-->
+                        <span class="pay fr">
+                            请在 <span class="c-df1f26 js-count-time" data-left="30000">1小时28分32秒</span> 内完成付款，否则订单将被自动取消。
+                            <a href="#" class="normal-link normal-link-g">取消订单</a>
+                            <a href="#" class="normal-link normal-link-r">付款</a>
+                        </span>
+                    </div>
+                    <div class="sub-box">
+                        <div class="order-item">
+                            <h2><span>订单跟踪</span></h2>
+                            <ul class="f-14 c-999">
+                                <li><span class="timer">2015-1-22 23:30:00</span> 您提交了订单，请尽快支付</li>
+                                <li><span class="timer">2015-1-22 23:43:00</span> 您的订单已被取消，如有疑问请联系客服。操作人：XXX</li>
+                                <li class="express"><span class="label">配送方式</span> 快递配送</li>
+                            </ul>
+                        </div>
+                        <div class="order-item">
+                            <h2><span>订单信息</span></h2>
+                            <ul class="f-14 c-999">
+                                <li><span class="label">收货人</span> 陈星星</li>
+                                <li><span class="label">送货地址</span> 北京市海淀区学院路51号首享科技大厦13层</li>
+                                <li><span class="label">手机号</span> 186****7630</li>
+                                <li><span class="label">支付方式</span> 无</li>
+                                <li><span class="label">支付时间</span> 无</li>
+                                <li><span class="label">发票</span> 如需发票请发送邮件至moyukefu@baofeng.com，邮件正文说明订单号和发票抬头。 </li>
+                            </ul>
+                        </div>
+                        <div class="order-item">
+                            <h2><span>商品清单</span></h2>
+                            <table border="0" cellspacing="0" cellpadding="0" class="user-product">
+                                <thead>
+                                    <tr>
+                                        <th class="w1">商品</th>
+                                        <th class="w2">单价</th>
+                                        <th class="w3">数量</th>
+                                        <th class="w4">小计</th>
+                                        <th class="w5">操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr data-goodsid="10008" data-total="398">
+                                        <td>
+                                            <div class="product-info">
+                                                <a href="#">
+                                                    <div class="image"><img src="www/images/detail/3s.jpg" width="98" height="98"></div>
+                                                    <div class="info">
+                                                        <h3 class="f-14">小黄人耳机</h3>
+                                                        <p class="c-666">颜色：黄白  尺寸：小号</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td>¥ 119.00</td>
+                                        <td>x2</td>
+                                        <td class="c-e73d4d">¥ 119.00</td>
+                                        <td>--</td>
+                                    </tr>
+                                    <tr data-goodsid="10009" data-total="223.56">
+                                        <td>
+                                            <div class="product-info">
+                                                <a href="#">
+                                                    <div class="image"><img src="www/images/detail/2s.jpg" width="98" height="98"></div>
+                                                    <div class="info">
+                                                        <h3 class="f-14">小黄人耳机</h3>
+                                                        <p class="c-666">颜色：黄白  尺寸：小号</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td>¥ 69.00</td>
+                                        <td>x2</td>
+                                        <td class="c-e73d4d">¥ 69.00</td>
+                                        <td>--</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="row user-order-coupon">
+                                <span class="fl f-16">已用优惠券</span>
+                                <span class="fl coupon-info f-12">全品大促销   优惠额度：10元</span>
+                            </div>
+                            <table border="0" cellspacing="0" cellpadding="0" align="right" class="user-total c-666 f-14">
+                                <tr>
+                                    <th>商品件数</th>
+                                    <td>2件</td>
+                                </tr>
+                                <tr>
+                                    <th>总金额</th>
+                                    <td>¥<span id="js-total">621.56</span></td>
+                                </tr>
+                                <tr>
+                                    <th>运费</th>
+                                    <td>+<span id="js-freight">11</span>元</td>
+                                </tr>
+                                <tr>
+                                    <th>优惠券抵扣</th>
+                                    <td>-<span id="js-coupon-total">20</span>元</td>
+                                </tr>
+                                <tr>
+                                    <th>余额抵扣</th>
+                                    <td>-<span id="js-yue-total">8</span>元</td>
+                                </tr>
+                                <tr>
+                                    <th>应付</th>
+                                    <td><span class="f-24 c-e73d4d" id="js-pay-total">378.00</span><span class="c-e73d4d">元</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--@@ include("inc/footer.html") -->
+</div>
+<!--@@ include("inc/static.html") -->
+<!-- build:js /www/scripts/user_order_detail.js -->
+<script src="/www/scripts/user_order_detail.js"></script>
+<!-- endbuild -->
+</body>
+</html>

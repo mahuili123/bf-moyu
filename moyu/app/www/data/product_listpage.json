@@ -1,0 +1,75 @@
+{
+    "code": "0",
+    "msg": "成功",
+    "data": [{
+        "product_name": "暴风超体电视B系列 - ajax",
+        "product_money": "1",
+        "product_money_type": "1",
+        "product_store": "1",
+        "product_img_url": "www/images/product_list/1.jpg",
+        "product_url": "detail.html"
+    }, {
+        "product_name": "暴风超体电视B系列 - ajax",
+        "product_money": "1",
+        "product_money_type": "0",
+        "product_store": "1",
+        "product_img_url": "www/images/product_list/2.jpg",
+        "product_url": "detail.html"
+    }, {
+        "product_name": "暴风超体电视B系列 - ajax",
+        "product_money": "1",
+        "product_money_type": "1",
+        "product_store": "1",
+        "product_img_url": "www/images/product_list/3.jpg",
+        "product_url": "detail.html"
+    }, {
+        "product_name": "暴风超体电视B系列 - ajax",
+        "product_money": "1",
+        "product_money_type": "1",
+        "product_store": "1",
+        "product_img_url": "www/images/product_list/4.jpg",
+        "product_url": "detail.html"
+    }, {
+        "product_name": "暴风超体电视B系列 - ajax",
+        "product_money": "1",
+        "product_money_type": "1",
+        "product_store": "1",
+        "product_img_url": "www/images/product_list/5.jpg",
+        "product_url": "detail.html"
+    }, {
+        "product_name": "暴风超体电视B系列 - ajax",
+        "product_money": "1",
+        "product_money_type": "1",
+        "product_store": "1",
+        "product_img_url": "www/images/product_list/6.jpg",
+        "product_url": "detail.html"
+    }, {
+        "product_name": "暴风超体电视B系列 - ajax",
+        "product_money": "1",
+        "product_money_type": "1",
+        "product_store": "1",
+        "product_img_url": "www/images/product_list/7.jpg",
+        "product_url": "detail.html"
+    }, {
+        "product_name": "暴风超体电视B系列 - ajax",
+        "product_money": "1",
+        "product_money_type": "1",
+        "product_store": "1",
+        "product_img_url": "www/images/product_list/8.jpg",
+        "product_url": "detail.html"
+    }, {
+        "product_name": "暴风超体电视B系列 - ajax",
+        "product_money": "1",
+        "product_money_type": "1",
+        "product_store": "0",
+        "product_img_url": "www/images/product_list/9.jpg",
+        "product_url": "detail.html"
+    }, {
+        "product_name": "暴风超体电视B系列 - ajax",
+        "product_money": "1",
+        "product_money_type": "1",
+        "product_store": "1",
+        "product_img_url": "www/images/product_list/10.jpg",
+        "product_url": "detail.html"
+    }]
+}

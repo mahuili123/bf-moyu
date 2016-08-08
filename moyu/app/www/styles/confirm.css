@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+.mainbody { padding-bottom: 20px; padding-top: 20px; }
+.confirm-box { width: 1126px; padding: 0 50px 50px; background: #ffffff; }
+.confirm-box h1 { font-size: 26px; font-weight: normal; line-height: 70px; margin: 0; padding: 0; }
+
+.confirm-item { width: 100%; float: left; clear: both; padding: 20px 0; }
+.confirm-item .title { width: 110px; float: left; font-size: 18px; color: #000000; }
+.confirm-item .value { width: 1016px; float: left; font-size: 14px; color: #666666; }
+
+.confirm-item-addr .title, .confirm-item-coupon .title { margin-bottom: 15px; }
+.confirm-item-addr { padding-bottom: 0; }
+.address-more { display: none; }
+.icon-address-more { width: 30px; height: 25px; float: left; background: url(../images/form/address.png) no-repeat -60px 0; }
+.icon-address-more-c { background-position: -60px -23px; }
+
+.confirm-product { padding-top: 15px; }
+.confirm-product table { width: 100%; text-align: center;  border: 1px #cccccc solid; }
+.confirm-product table th { height: 34px; color: #666666; font-weight: normal; font-size: 12px; }
+.confirm-product table td { padding: 20px; border-top: 1px #cccccc solid; }
+.confirm-product table .first { text-indent: 20px; text-align: left; }
+.moyu-addrs { height: 176px; overflow: hidden; }
+.w1 { width: 670px; }
+.w2 { width: 140px; }
+.w3 { width: 165px; }
+.w4 { width: auto; }
+
+.product-info { width: 454px; float: left; text-align: left; float: left; }
+.product-info a { width: 100%; float: left; }
+.product-info .image { width: 98px; height: 98px; overflow: hidden; float: left; border: 1px #eeeeee solid; }
+.product-info .info { width: 340px; float: right; }
+.product-info .info p { margin: 0; padding: 0; font-size: 12px; }
+
+.confirm-coupon { padding-bottom: 20px; }
+.confirm-coupon ul { padding: 10px 0; }
+.confirm-coupon table { width: 100%;  border: 1px #cccccc solid; }
+.confirm-coupon table th { height: 34px; border-bottom: 1px #cccccc solid; font-weight: normal; text-align: left; text-indent: 20px; }
+.confirm-coupon table td { padding: 0 0 0 20px; font-size: 14px; }
+.confirm-coupon table td .p20 { padding-right: 20px; }
+
+.add-coupon { width: 450px; height: 35px; border: 1px #df1f26 solid; overflow: hidden; }
+.add-coupon button { width: 100px; color: #ffffff; height: 35px; border: 0; text-align: center; background: #df1f26; float: right; cursor: pointer; }
+.add-coupon input { width: 330px; height: 35px; border: 0; background: none; float: left; padding: 0 10px; }
+
+.confirm-item-total { font-size: 14px; padding-bottom: 0; }
+.confirm-item-total table { width: 230px; }
+.confirm-item-total th { font-weight: normal;  text-align: left; }
+.confirm-item-total td { text-align: right; }
+.confirm-item-total button { width: 100%; margin-top: 20px; }

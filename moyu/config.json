@@ -1,0 +1,57 @@
+{
+    "folders": {
+        "app": "app",
+        "temp": ".tmp",
+        "dist": "dist",
+        "inc": "inc",
+        "static": "www",
+        "sourcemaps": "sourcemaps",
+        "ignore": ["plugins"]
+    },
+    "server": {
+        "dev": {
+            "port": 9000,
+            "notify": false,
+            "scrollProportionally": false,
+            "server": {
+                "baseDir": [],
+                "index": "default.html",
+                "routes": {
+                    "/bower_components": "bower_components",
+					"/user/cart/goodsnum": "app/www/data/cart.json",
+					"/product/listpage": "app/www/data/product_listpage.json",
+					"/expressnode": "app/www/data/expressnode.json",
+					"/user/center/couponsubmit": "app/www/data/couponsubmit.json",
+					"/user/balance/ajax_code_exchange": "app/www/data/succ.json",
+					"/user/coupon/ajax_code_bind": "app/www/data/succ.json",
+					"/user/center/myaddress": "app/www/data/get_address.json",
+					"/user/order/confirmsubmit": "app/www/data/succ.json"
+                }
+            }
+        },
+        "dist": {
+            "port": 9001,
+            "notify": false,
+            "scrollProportionally": false,
+            "server": {
+                "baseDir": [],
+                "index": "index.html"
+            }
+        }
+    },
+    "fileinclude": {
+        "prefix": "<!--@@ ",
+        "suffix": " -->",
+        "basepath": "@file",
+        "context": {
+            "sitename": "暴风魔娱 moyu.com",
+            "separator": " - "
+        }
+    },
+    "config_static": {
+        "file_name": "config.json",
+        "api_name": "api.json",
+        "host": "http://static.mall.moyu.com/assets/",
+        "dev": ["http://localhost:9000/", "http://192.168.203.233:9000/", "http://cwx.moyu.com:9000/"]
+    }
+}

@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+.detail-box { padding-bottom: 30px; }
+.album { width: 582px; float: left; }
+.big-img { width: 580px; height: 580px; overflow: hidden; border: 1px #cccccc solid; }
+.small-imgs { height: 97px; margin: 20px 0; position: relative; }
+.small-imgs ul { width: 100%; float: left; clear: both; }
+.small-imgs li { width: 95px; height: 95px; overflow: hidden; float: left; border: 1px #dddddd solid; margin-right: 8px; text-align: center; }
+.small-imgs li:hover { border-color: #999999; }
+.small-imgs li.current { border-color: #e73d4d; }
+.ctrl { width: 30px; height: 45px; display: block; position: absolute; padding: 26px 0; }
+.ctrl i { width: 30px; height: 45px; display: block; background-image: url(../images/detail/icon.png); background-repeat: no-repeat; }
+.prev { left: -5px; top: 0; }
+.prev i { background-position: -10px 0; }
+.prev:hover i { background-position: -10px -45px; }
+.next { right: -5px; top: 0; }
+.next i { background-position: -53px 0; }
+.next:hover i { background-position: -53px -45px; }
+.prev.disabled i { background-position: -10px 0; }
+.next.disabled i { background-position: -53px 0; }
+.imgs-silder { width: 520px; height: 97px; overflow: hidden; position: absolute; left: 32px; top: 0; }
+.imgs-silder ul { position: absolute; left: 0; top: 0; }
+
+.detail-info { width: 568px; float: right; }
+.detail-info h1 { font-size: 24px; font-weight: normal; }
+.detail-info p { color: #666666; }
+.detail-info .price { height: 50px; background: #f0f0f0; line-height: 50px; }
+.detail-info .price strong { font-size: 24px; color: #e73d4d; font-weight: normal; }
+.detail-info .price .lt { text-decoration: line-through; color: #999999; padding-left: 90px; }
+.detail-info .label { width: 90px; height: 42px; float: left; padding-left: 10px; font-size: 14px; color: #666666; line-height: 42px; overflow: hidden; }
+.detail-info .price .label { line-height: 50px; }
+.detail-info .form { width: 468px; float: left; font-size: 14px; }
+.detail-info .item { padding: 15px 0; }
+.detail-info .item-param { padding-bottom: 10px; }
+.detail-info .buttons { padding: 30px 0 0; }
+.detail-info .text { line-height: 42px; }
+.detail-error { color: #df1f26; padding-left: 20px; line-height: 42px; }
+
+.dim { width: 500px; }
+.dim li { float: left; line-height: 40px; border: 1px #e3e3e3 solid; white-space: nowrap; margin: 0 20px 20px 0; position: relative; }
+.dim li a { width: 100px; display: block; text-align: center; }
+.dim li i { width: 20px; height: 19px; display: none; background: url(../images/detail/icon.png) no-repeat -114px -26px; position: absolute; right: 0; bottom: 0; }
+.dim li.checked { border-color: #df1f26; }
+.dim li.checked i { display: block; }
+.dim li.disabled { border-color: #f0f0f0; background: #f0f0f0; color: #999999; }
+.dim li.disabled a { color: #999999; cursor: default; }
+
+.my-input-number { width: 124px; height: 40px; border: 1px #cccccc solid; float: left; }
+.my-input-number a { width: 40px; height: 40px; float: left; line-height: 36px; font-size: 24px; text-align: center; }
+.my-input-number input { width: 42px; height: 40px; font-size: 16px; line-height: 40px; border: 0; border-left: 1px #cccccc solid; border-right: 1px #cccccc solid; text-align: center; margin: 0; padding: 0; float: left; }
+
+.detail-nav { height: 60px; border-bottom: 1px #dfdfdf solid; border-top: 1px #dfdfdf solid; }
+.detail-nav li { float: left; line-height: 57px; border-bottom: 3px #ffffff solid; }
+.detail-nav li a { display: block; padding: 0 20px; font-size: 20px; }
+.detail-nav li.current { border-bottom-color: #df1f26; }
+.detail-nav li.current a { color: #df1f26; }
+.detail-tabs { padding-top: 20px; }
+
+
+/*快照*/
+.snap-image { width: 350px; float: left; border: 1px #cccccc solid; overflow: hidden; }
+.snap-info { width: 836px; float: right; }
+.snap-info h1 { font-size: 24px; font-weight: normal; }
+.snap-info .title { width: 70px; padding-right: 10px; float: left; }
+.snap-info ul { padding-top: 10px; padding-bottom: 20px; }
+.snap-info .item { padding: 3px 0; }
+.snap-info .first { padding-bottom: 10px; }
+.snap-msg { width: 365px; background: #f0f0f0; border: 1px #cccccc dashed; clear: both; float: left; }
+.snap-msg i { width: 26px; height: 26px; float: left; background: url(../images/detail/icon.png) no-repeat -100px -55px; position: relative; left: 20px; top: 16px; }
+.snap-msg p { width: 300px; float: right; }
+.snap-msg a { margin-top: 12px; display: block; }
+
+.detail-out { padding-top: 10px; }

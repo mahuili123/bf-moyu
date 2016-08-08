@@ -1,0 +1,33 @@
+<!doctype html>
+<html class="error-page">
+<head>
+<!--@@ include("inc/head.html", {"title": "404", "keywords": "keywords", "description": "description"}) -->
+<!-- build:css /www/styles/error.css -->
+<link type="text/css" rel="stylesheet" href="/www/styles/error.css">
+<!-- endbuild -->
+</head>
+
+<body>
+    <div class="container row">
+        <!--@@ include("inc/header.html") -->
+        <div class="mainbody row">
+            <div class="wrapper">
+                <div class="error row">
+                    <div class="error-img">
+                        <img src="www/images/error/error.jpg" width="430" height="214">
+                    </div>
+                    <div class="error-info">
+                        <h1>抱歉！您访问的页面不见啦...</h1>
+                        <dl class="row">
+                            <dt>您可以：</dt>
+                            <dd><a href="/index.html">返回首页</a> <a href="javascript:history.go(-1);">返回上一页</a></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--@@ include("inc/footer.html") -->
+    </div>
+    <!--@@ include("inc/static.html") -->
+</body>
+</html>

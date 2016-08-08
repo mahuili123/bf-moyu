@@ -1,0 +1,111 @@
+<!doctype html>
+<html class="user-center">
+<head>
+    <!--@@ include("inc/head.html", {"title": "我的优惠券", "keywords": "keywords", "description": "description"}) -->
+    <!-- build:css /www/styles/user.css -->
+    <link type="text/css" rel="stylesheet" href="/www/styles/get_express.css">
+    <link type="text/css" rel="stylesheet" href="/www/styles/user.css">
+    <!-- endbuild -->
+</head>
+<body>
+<div class="container row">
+    <!--@@ include("inc/header.html") -->
+    <div class="mainbody row bg-eee">
+        <div class="wrapper">
+            <div class="user-layout row">
+                <div class="sidebar">
+                    <!--@@ include("inc/user_nav.html") -->
+                </div>
+                <div class="main main-nopadding">
+                    <div class="coupon-body">
+                        <div class="coupon-title c-999">
+                            <ul>
+                                <li class="current">未使用优惠券</li>
+                                <li>已使用/已过期优惠券</li>
+                            </ul>
+                            <div class="coupon-ops after-sales f-12">
+                                <a href="#" class="user-rule">使用规则</a>
+                                <a href="javascript:void(0);" class="bind-coupon js-input-code">绑定优惠券</a>
+                            </div>
+                        </div>
+                        <div class="coupon-box row">
+                            <div class="coupon-item f-14">
+                                <ul>
+                                    <li>
+                                        <dl>
+                                            <dt>
+                                                <p class="coupon-price"><i class="f-14 f-n">￥</i>100.00</p>
+                                                <p>满100.00元可用</p>
+                                                <p>有效期2016.07.25-2016.08.05</p>
+                                            </dt>
+                                            <dd>
+                                                <h3>mlml</h3>
+                                                <p>· 券号：kh7t7mmgemgc</p>
+                                                <p>· mdsalgdsal</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li class="last">
+                                        <dl>
+                                            <dt>
+                                            <p class="coupon-price"><i class="f-14 f-n">￥</i>10.00</p>
+                                            <p>满100.00元可用</p>
+                                            <p>有效期2016.07.25-2016.08.05</p>
+                                            </dt>
+                                            <dd>
+                                                <h3>mlml</h3>
+                                                <p>· 券号：kh7t7mmgemgc</p>
+                                                <p>· mdsalgdsal</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="coupon-item invalid-coupon f-14">
+                                <ul>
+                                    <li>
+                                        <dl>
+                                            <dt>
+                                            <p class="coupon-price"><i class="f-14 f-n">￥</i>10.00</p>
+                                            <p>满100.00元可用</p>
+                                            <p>有效期2016.07.25-2016.08.05</p>
+                                            <em class="coupon-ico coupon-used"></em>
+                                            </dt>
+                                            <dd>
+                                                <h3>mlml</h3>
+                                                <p>· 券号：kh7t7mmgemgc</p>
+                                                <p>· mdsalgdsal</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>
+                                            <p class="coupon-price"><i class="f-14 f-n">￥</i>10.00</p>
+                                            <p>满100.00元可用</p>
+                                            <p>有效期2016.07.25-2016.08.05</p>
+                                            <em class="coupon-ico coupon-expire"></em>
+                                            </dt>
+                                            <dd>
+                                                <h3>mlml</h3>
+                                                <p>· 券号：kh7t7mmgemgc</p>
+                                                <p>· mdsalgdsal</p>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--@@ include("inc/footer.html") -->
+</div>
+<!--@@ include("inc/static.html") -->
+<!-- build:js /www/scripts/coupon.js -->
+<script src="/www/scripts/coupon.js"></script>
+<!-- endbuild -->
+</body>
+</html>

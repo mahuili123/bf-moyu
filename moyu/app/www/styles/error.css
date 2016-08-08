@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+.error { height: 300px; padding-top: 160px; }
+.error-img { width: 600px; float: left; text-align: center; }
+.error-info { width: 600px; float: right; }
+.error-info h1 { font-size: 34px; font-weight: normal; padding: 40px 0; }
+.error-info dt { float: left; color: #999999; }
+.error-info dd { width: 468px; float: left; }
+.error-info dd a { color: #2340bb; margin: 0 6px; }
+.error-info dd a:hover { color: #cc0000; }
+
+.wrapper-720 { width: 720px; margin: 0 auto; }
+.error-720 { padding: 180px 0; }
+.error-720 .image { width: 250px; text-align: center; float: left; }
+.error-720 .text { width: 460px; float: right; }
+.error-720 .text h1 { font-size: 24px; font-weight: normal; padding-bottom: 30px; }
+.error-720 .text dt { padding-bottom: 15px; }

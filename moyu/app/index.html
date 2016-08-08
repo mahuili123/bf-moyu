@@ -1,0 +1,346 @@
+<!doctype html>
+<html class="homepage">
+<head>
+<!--@@ include("inc/head.html", {"title": "首页", "keywords": "keywords", "description": "description"}) -->
+<!-- build:css /www/styles/index.css -->
+<link type="text/css" rel="stylesheet" href="/www/styles/index.css">
+<!-- endbuild -->
+</head>
+
+<body>
+    <div class="container row">
+        <!--@@ include("inc/header.html") -->
+        <div class="mainbody row">
+            <!-- 焦点图 -->
+            <div class="row index-slider js-index-slider">
+                <div class="slides-ul" id="js-slides">
+                    <div class="item" style="background-image:url(www/images/index/30.jpg); background-color:#f7d30f;"><a href="#1">标题一</a></div>
+                    <div class="item" style="background-image:url(www/images/index/31.jpg); background-color:#000000;"><a href="#2">标题二</a></div>
+                    <div class="item" style="background-image:url(www/images/index/32.jpg); background-color:#ffffff;"><a href="#3">标题三</a></div>
+                    <div class="item" style="background-image:url(www/images/index/30.jpg); background-color:#f7d30f;"><a href="#4">标题四</a></div>
+                    <div class="item" style="background-image:url(www/images/index/31.jpg); background-color:#000000;"><a href="#5">标题五</a></div>
+                </div>
+            </div>
+            <!-- /焦点图 -->
+            <div class="wrapper">
+                <!-- 首屏推荐位 -->
+                <div class="index-first-command row">
+                    <ul>
+                        <li><a href="#" title="标题"><img src="www/images/index/1.jpg" width="242" height="154" alt="标题"><span class="mask"></span></a></li>
+                        <li><a href="#" title="标题"><img src="www/images/index/2.jpg" width="242" height="154" alt="标题"><span class="mask"></span></a></li>
+                        <li><a href="#" title="标题"><img src="www/images/index/3.jpg" width="242" height="154" alt="标题"><span class="mask"></span></a></li>
+                        <li><a href="#" title="标题"><img src="www/images/index/4.jpg" width="242" height="154" alt="标题"><span class="mask"></span></a></li>
+                        <li><a href="#" title="标题"><img src="www/images/index/5.jpg" width="242" height="154" alt="标题"><span class="mask"></span></a></li>
+                    </ul>
+                </div>
+                <!-- /首屏推荐位 -->
+                <!-- 最热影视周边 -->
+                <div class="index-box index-movie row js-side-item">
+                    <div class="index-box-title row">
+                        <h2>
+                            <i class="index-icon index-icon-movie"></i>
+                            最热影视周边
+                            <a href="#" class="more">查看更多 <i class="index-icon index-icon-more"></i></a>
+                        </h2>
+                    </div>
+                    <div class="index-box-list row">
+                        <ul>
+                            <li>
+                                <a href="#" title="小黄人公仔系列">
+                                    <img src="www/images/index/6.jpg" width="490" height="527" alt="小黄人公仔系列">
+                                    <div class="info">
+                                        <span class="price c-df1f26 f-20">&yen;399.00</span>
+                                        <span class="name f-20">小黄人公仔系列</span>
+                                        <span class="intro f-14 c-999">小黄人大眼萌</span>
+                                    </div>
+                                    <i class="inew"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="狐尼克公仔">
+                                    <img src="www/images/index/7.jpg" width="244" height="527" alt="狐尼克公仔">
+                                    <div class="info">
+                                        <span class="price f-20">&yen;199.00</span>
+                                        <span class="name f-20">狐尼克公仔</span>
+                                        <span class="intro f-14 c-999">疯狂动物城</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="大白同款手表">
+                                    <img src="www/images/index/8.jpg" width="244" height="263" alt="大白同款手表">
+                                    <div class="info">
+                                        <span class="price">&yen;159.00</span>
+                                        <span class="name">大白同款手表</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="大白同款手表">
+                                    <img src="www/images/index/9.jpg" width="244" height="263" alt="大白同款手表">
+                                    <div class="info">
+                                        <span class="price">&yen;159.00</span>
+                                        <span class="name">大白同款手表</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="大圣归来玩偶">
+                                    <img src="www/images/index/10.jpg" width="244" height="263" alt="大圣归来玩偶">
+                                    <div class="info">
+                                        <span class="price">&yen;119.00</span>
+                                        <span class="name">大圣归来玩偶</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="小黄人系列卷线耳机">
+                                    <img src="www/images/index/11.jpg" width="244" height="263" alt="小黄人系列卷线耳机">
+                                    <div class="info">
+                                        <span class="price">&yen;19.00</span>
+                                        <span class="name">小黄人系列卷线耳机</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /最热影视周边 -->
+                <!-- 暴风魔镜 -->
+                <div class="index-box index-mojing row js-side-item">
+                    <div class="index-box-title row">
+                        <h2>
+                            <i class="index-icon index-icon-mojing"></i>
+                            暴风魔镜
+                            <a href="#" class="more">查看更多 <i class="index-icon index-icon-more"></i></a>
+                        </h2>
+                    </div>
+                    <div class="index-box-list row">
+                        <ul>
+                            <li>
+                                <a href="#" title="暴风魔镜4 黄金版 iPhone">
+                                    <img src="www/images/index/12.jpg" width="490" height="527" alt="暴风魔镜4 黄金版 iPhone">
+                                    <div class="info">
+                                        <span class="price c-df1f26 f-20">&yen;499.00</span>
+                                        <span class="name f-20">暴风魔镜4 黄金版 iPhone</span>
+                                        <span class="intro f-14 c-999">更轻薄 更流畅</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="魔镜小D新品首发">
+                                    <img src="www/images/index/13.jpg" width="244" height="263" alt="魔镜小D新品首发">
+                                    <div class="info">
+                                        <span class="price f-20">&yen;79.00</span>
+                                        <span class="name">魔镜小D新品首发</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="暴风魔镜III Plus 纪念版">
+                                    <img src="www/images/index/14.jpg" width="244" height="263" alt="暴风魔镜III Plus 纪念版">
+                                    <div class="info">
+                                        <span class="price">&yen;119.00</span>
+                                        <span class="name">暴风魔镜III Plus 纪念版</span>
+                                    </div>
+                                    <i class="inew"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="暴风魔眼1代">
+                                    <img src="www/images/index/15.jpg" width="244" height="263" alt="暴风魔眼1代">
+                                    <div class="info">
+                                        <span class="price">&yen;799.00</span>
+                                        <span class="name">暴风魔眼1代</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="暴风魔镜III黄金纪念版">
+                                    <img src="www/images/index/16.jpg" width="244" height="263" alt="暴风魔镜III黄金纪念版">
+                                    <div class="info">
+                                        <span class="price">&yen;119.00</span>
+                                        <span class="name">暴风魔镜III黄金纪念版</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="暴风魔镜4 标准版 iPhone ">
+                                    <img src="www/images/index/17.jpg" width="244" height="263" alt="暴风魔镜4 标准版 iPhone ">
+                                    <div class="info">
+                                        <span class="price">&yen;199.00</span>
+                                        <span class="name">暴风魔镜4 标准版 iPhone </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="暴风魔镜蓝牙无线遥控器">
+                                    <img src="www/images/index/18.jpg" width="244" height="263" alt="暴风魔镜蓝牙无线遥控器">
+                                    <div class="info">
+                                        <span class="price">&yen;39.00</span>
+                                        <span class="name">暴风魔镜蓝牙无线遥控器</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /暴风魔镜 -->
+                <!-- 暴风超体电视 -->
+                <div class="index-box index-tv row js-side-item">
+                    <div class="index-box-title row">
+                        <h2>
+                            <i class="index-icon index-icon-tv"></i>
+                            暴风超体电视
+                            <a href="#" class="more">查看更多 <i class="index-icon index-icon-more"></i></a>
+                        </h2>
+                    </div>
+                    <div class="index-box-list row">
+                        <ul>
+                            <li class="item-1">
+                                <a href="#" title="暴风超体电视玫瑰金">
+                                    <img src="www/images/index/19.jpg" width="490" height="264" alt="暴风超体电视玫瑰金">
+                                    <div class="info">
+                                        <span class="price c-df1f26 f-20">&yen;3999.00</span>
+                                        <span class="name f-20">暴风超体电视玫瑰金</span>
+                                        <span class="intro f-14 c-999">我的看片神器</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item-2">
+                                <a href="#" title="暴风超体电视玫瑰金">
+                                    <img src="www/images/index/20.jpg" width="490" height="527" alt="暴风超体电视玫瑰金">
+                                    <div class="info">
+                                        <span class="price f-20">&yen;3999.00.00</span>
+                                        <span class="name f-20">暴风超体电视玫瑰金</span>
+                                        <span class="intro f-14 c-999">我的看片神器</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item-3">
+                                <a href="#" title="暴风超体电视玫瑰金">
+                                    <img src="www/images/index/21.jpg" width="490" height="527" alt="暴风超体电视玫瑰金">
+                                    <div class="info">
+                                        <span class="price f-20">&yen;3999.00.00</span>
+                                        <span class="name f-20">暴风超体电视玫瑰金</span>
+                                        <span class="intro f-14 c-999">我的看片神器</span>
+                                    </div>
+                                    <i class="ihot"></i>
+                                </a>
+                            </li>
+                            <li class="item-4">
+                                <a href="#" title="暴风超体电视玫瑰金">
+                                    <img src="www/images/index/22.jpg" width="490" height="264" alt="暴风超体电视玫瑰金">
+                                    <div class="info">
+                                        <span class="price f-20">&yen;3999.00</span>
+                                        <span class="name f-20">暴风超体电视玫瑰金</span>
+                                        <span class="intro f-14 c-999">我的看片神器</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item-5">
+                                <a href="#" title="暴风超体电视玫瑰金">
+                                    <img src="www/images/index/23.jpg" width="244" height="263" alt="暴风超体电视玫瑰金">
+                                    <div class="info">
+                                        <span class="price">&yen;119.00</span>
+                                        <span class="name">暴风超体电视玫瑰金</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item-6">
+                                <a href="#" title="暴风超体电视玫瑰金">
+                                    <img src="www/images/index/24.jpg" width="244" height="263" alt="暴风超体电视玫瑰金">
+                                    <div class="info">
+                                        <span class="price">&yen;119.00</span>
+                                        <span class="name">暴风超体电视玫瑰金</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item-7">
+                                <a href="#" title="暴风超体电视玫瑰金">
+                                    <img src="www/images/index/25.jpg" width="244" height="263" alt="暴风超体电视玫瑰金">
+                                    <div class="info">
+                                        <span class="price">&yen;119.00</span>
+                                        <span class="name">暴风超体电视玫瑰金</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /暴风超体电视 -->
+                <!-- 视频专区 -->
+                <div class="index-box index-vedio row js-side-item">
+                    <div class="index-box-title row">
+                        <h2>
+                            视频专区
+                        </h2>
+                    </div>
+                    <div class="index-box-list row">
+                        <ul>
+                            <li><a href="#" title="暴风3·28战略发布会"><img src="www/images/index/26.jpg" width="302" height="188" alt="暴风3·28战略发布会"><span class="title">暴风3·28战略发布会</span><i class="index-icon index-icon-play"></i></a></li>
+                            <li><a href="#" title="暴风魔镜4代 更轻 更薄 更舒适"><img src="www/images/index/27.jpg" width="302" height="188" alt="暴风魔镜4代 更轻 更薄 更舒适"><span class="title">暴风魔镜4代 更轻 更薄 更舒适</span><i class="index-icon index-icon-play"></i></a></li>
+                            <li><a href="#" title="风UI"><img src="www/images/index/28.jpg" width="302" height="188" alt="风UI"><span class="title">风UI</span><i class="index-icon index-icon-play"></i></a></li>
+                            <li><a href="#" title="暴风TV产品视频"><img src="www/images/index/29.jpg" width="302" height="188" alt="暴风TV产品视频"><span class="title">暴风TV产品视频</span><i class="index-icon index-icon-play"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /视频专区 -->
+            </div>
+        </div>
+        <!--@@ include("inc/footer.html") -->
+    </div>
+    <!-- 边栏导航 -->
+    <div class="index-sidebar js-index-sidebar">
+        <div class="index-nav">
+            <ul>
+                <li>
+                    <a href="javascript:;">
+                        <i class="index-icon-s index-icon-s-movie"></i>
+                        <span class="title">影视<br>周边</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <i class="index-icon-s index-icon-s-mojing"></i>
+                        <span class="title">暴风<br>魔镜</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <i class="index-icon-s index-icon-s-tv"></i>
+                        <span class="title">暴风<br>电视</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <i class="index-icon-s index-icon-s-vedio"></i>
+                        <span class="title">暴风<br>视频</span>
+                    </a>
+                </li>
+                <li class="flow"><i class="index-icon-s index-icon-s-arrow"></i></li>
+            </ul>
+        </div>
+        <div class="index-act">
+            <ul>
+                <li>
+                    <a href="javascript:;">
+                        <i class="index-icon-s index-icon-s-online"></i>
+                    </a>
+                </li>
+                <li class="js-gotop">
+                    <a href="javascript:;">
+                        <i class="index-icon-s index-icon-s-top"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /边栏导航 -->
+    <!--@@ include("inc/static.html") -->
+    <!-- build:js /www/scripts/index.js -->
+    <script src="/www/scripts/plugins/slidesjs/jquery.slides.js"></script>
+    <script src="/www/scripts/index.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

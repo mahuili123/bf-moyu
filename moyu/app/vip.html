@@ -1,0 +1,78 @@
+<!doctype html>
+<html class="detail">
+<head>
+<!--@@ include("inc/head.html", {"title": "暴风超体电视F1", "keywords": "keywords", "description": "description"}) -->
+<!-- build:css /www/styles/vip.css -->
+<link type="text/css" rel="stylesheet" href="/www/styles/vip.css">
+<!-- endbuild -->
+</head>
+
+<body>
+    <div class="container row">
+        <!--@@ include("inc/header.html") -->
+        <div class="mainbody row bg-eee mainbody-pt20 mainbody-pb30">
+            <div class="wrapper">
+                <div class="baofeng-vip-box row bg-fff">
+                    <div class="baofeng-vip row">
+                        <h1>购买暴风VIP</h1>
+                        <div class="product-type row js-product-type">
+                            <ul>
+                                <li data-pid="1" data-price="50" class="checked"><a href="javascript:;"><span class="name">1个月</span><span class="price">¥50</span><i class="icon-pay"></i></a></li>
+                                <li data-pid="2" data-price="150"><a href="javascript:;"><span class="name">3个月</span><span class="price">¥150</span><i class="icon-pay"></i></a></li>
+                                <li data-pid="3" data-price="600"><a href="javascript:;"><span class="name">12个月</span><span class="price">¥600</span><i class="icon-pay"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="payway row">
+                        <h3 class="row">选择支付平台付款</h3>
+                        <ul class="row">
+                            <li class="checked" data-id="1" data-value="1"><a href="javascript:;"><img src="www/images/pay/alipay.gif" width="230" height="70"><i class="icon-pay"></i></a></li>
+                            <li data-id="2" data-value="/www/images/pay/code.jpg"><a href="javascript:;"><img src="www/images/pay/weixin.gif" width="230" height="70"><i class="icon-pay"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="vip-yue row">
+                        <div class="title">使用余额</div>
+                        <div class="row f-14">
+                            <label>
+                                <input type="checkbox" name="use_yue" checked value="8" id="js-yue-num" class="js-rewrite">
+                                使用余额
+                                账户当前余额：<span class="c-df1f26">300</span>元
+                                本单最多可用：<span class="c-df1f26 f-20">8</span>元
+                            </label>
+                        </div>
+                    </div>
+                    <div class="vip-payinfo row">
+                        <table border="0" cellspacing="0" cellpadding="0" align="right">
+                            <tr>
+                                <th>总金额</th>
+                                <td>¥<span id="js-total">0.00</span></td>
+                            </tr>
+                            <tr>
+                                <th>余额抵扣</th>
+                                <td>-<span id="js-yue-total">0</span>元</td>
+                            </tr>
+                            <tr>
+                                <th>应付</th>
+                                <td><span class="f-24 c-e73d4d" id="js-pay-total">0.00</span><span class="c-e73d4d">元</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="btn">
+                                    <button type="button" class="btn-red-large" id="js-pay-submit">提交订单</button><br>
+                                    同意<a href="#">VIP会员服务协议</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--@@ include("inc/footer.html") -->
+    </div>
+    <!--@@ include("inc/static.html") -->
+    <!-- build:js /www/scripts/vip.js -->
+    <script src="/www/scripts/plugins/form/checkbox_radio.js"></script>
+    <script src="/www/scripts/ajax.js"></script>
+    <script src="/www/scripts/vip.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

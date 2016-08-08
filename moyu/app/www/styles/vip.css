@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+.icon-pay { background-image: url(../images/pay/icon.png); background-repeat: no-repeat; }
+.baofeng-vip-box { width: 1126px; padding: 0 50px; }
+.baofeng-vip h1 { font-size: 26px; line-height: 70px; font-weight: normal; padding-bottom: 10px; }
+.baofeng-vip li { width: 268px; height: 158px; float: left; padding: 0 20px 20px 0; }
+.baofeng-vip li a { width: 236px; height: 156px; display: block; border: 1px #cccccc solid; padding: 0 15px; text-align: center; position: relative; }
+.baofeng-vip li .name { width: 100%; display: block; line-height: 90px; font-size: 26px; }
+.baofeng-vip li .price { width: 100%; display: block; font-size: 27px; color: #df1f26; border-top: 1px #cccccc dashed; line-height: 62px; }
+.baofeng-vip li i { width: 36px; height: 36px; position: absolute; right: 0; bottom: 0; background-position: -44px 0; display: none; }
+.baofeng-vip li.checked i { display: block; }
+.baofeng-vip li.checked a { border-color: #df1f26; }
+
+.payway h3, .vip-yue .title { font-size: 18px; font-weight: normal; margin: 0; padding: 30px 0 20px; }
+.payway li { float: left; padding-right: 25px; }
+.payway li a { width: 230px; height: 70px; display: block; border: 1px #e5e5e5 solid; overflow: hidden; position: relative; }
+.payway li i { width: 36px; height: 36px; position: absolute; right: 0; bottom: 0; background-position: -44px 0; display: none; }
+.payway li.checked i { display: block; }
+.payway li.checked a { border-color: #df1f26; }
+.vip-yue .title { padding-bottom: 10px; }
+.vip-yue input[type="checkbox"] { opacity: 0; }
+
+.vip-payinfo { font-size: 14px; padding-bottom: 20px; }
+.vip-payinfo table { width: 230px; }
+.vip-payinfo th { font-weight: normal;  text-align: left; }
+.vip-payinfo td { text-align: right; }
+.vip-payinfo button { width: 100%; margin-top: 20px; font-size: 24px; margin-bottom: 10px; }
+.vip-payinfo .btn a { color: #999999; text-decoration: underline; }

@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+    <!--@@ include("inc/head.html", {"title": "收银台", "keywords": "keywords", "description": "description"}) -->
+    <!-- build:css /www/styles/payinfo.css -->
+    <link type="text/css" rel="stylesheet" href="/www/styles/payinfo.css">
+    <!-- endbuild -->
+</head>
+<body>
+<div class="container row">
+    <!--@@ include("inc/header_sample.html", {"title": "收银台"}) -->
+    <div class="mainbody row bg-eee">
+        <div class="wrapper">
+            <div class="order-info row bg-fff">
+                <i class="icon-pay icon-pay-ok"></i>
+                <div class="info">
+                    <h1>订单提交成功！</h1>
+                    <table border="0" cellspacing="0" cellpadding="0" class="f">
+                        <tr>
+                            <td width="80%">请在 <span class="f-16 c-df1f26" id="js-count-time" data-total="30000">23小时58分32秒</span> 内完成支付，超时后将取消订单</td>
+                            <td width="20%" class="t-r">应付总额：<span class="f-24 c-df1f26">¥3899.00</span></td>
+                        </tr>
+                        <tr>
+                            <td class="c-999">订单号：122939010293</td>
+                            <td class="t-r"><a href="javascript:;" class="js-more-detail">订单详情<i class="icon-pay icon-pay-down"></i></a></td>
+                        </tr>
+                    </table>
+                    <table border="0" cellspacing="0" cellpadding="0" class="s">
+                        <tr>
+                            <th>商品名</th>
+                            <td>暴风超体电视 55吋</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                收货人<br>
+                                送货地址<br>
+                                手机号
+                            </th>
+                            <td>
+                                陈星星<br>
+                                北京市海淀区学院路51号首享科技大厦13层<br>
+                                186****7630
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="nob">发票</th>
+                            <td class="nob">如需发票请发送邮件至moyukefu@baofeng.com，邮件正文说明订单号和发票抬头。 </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="bank-list row bg-fff">
+                <div class="item row">
+                    <h3 class="row">选择支付平台付款</h3>
+                    <ul class="row">
+                        <li class="checked" data-id="1" data-value="1"><a href="javascript:;"><img src="www/images/pay/alipay.gif" width="230" height="70"><i class="icon-pay"></i></a></li>
+                        <li data-id="2" data-value="/www/images/pay/code.jpg"><a href="javascript:;"><img src="www/images/pay/weixin.gif" width="230" height="70"><i class="icon-pay"></i></a></li>
+                    </ul>
+                </div>
+                <div class="btns row">
+                    <button type="button" class="btn-red-large" id="js-pay">付 款</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--@@ include("inc/footer.html") -->
+</div>
+<!--@@ include("inc/static.html") -->
+<script>
+var $CONFIG = {
+    order_id: "122939010293",
+    total: "3899.00"
+};
+</script>
+<!-- build:js /www/scripts/pay.js -->
+<script src="/www/scripts/pay.js"></script>
+<!-- endbuild -->
+</body>
+</html>

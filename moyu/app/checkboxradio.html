@@ -1,0 +1,56 @@
+<!doctype html>
+<html class="error-page">
+<head>
+<!--@@ include("inc/head.html", {"title": "美化checkbox和radio", "keywords": "keywords", "description": "description"}) -->
+</head>
+
+<body>
+    <div class="container row">
+        <div class="mainbody row">
+            <ul style="width: 300px; margin:100px auto;">
+                <li>
+                    <label><input type="checkbox" value="1" name="a1" checked>选项1</label>
+                </li>
+                <li>
+                    <label><input type="checkbox" value="2" name="a1" disabled>选项2</label>
+                </li>
+                <li>
+                    <label><input type="checkbox" value="3" name="a1">选项3</label>
+                </li>
+                <li>
+                    <label><input type="checkbox" value="4" name="a1">选项4</label>
+                </li>
+                <li>
+                    <label><input type="checkbox" value="5" name="a1">选项5</label>
+                </li>
+            </ul>
+
+            <ul style="width: 300px; margin:100px auto;">
+                <li>
+                    <label><input type="radio" value="1" name="a2" checked>选项1</label>
+                </li>
+                <li>
+                    <label><input type="radio" value="2" name="a2" disabled>选项2</label>
+                </li>
+                <li>
+                    <label><input type="radio" value="3" name="a2">选项3</label>
+                </li>
+                <li>
+                    <label><input type="radio" value="4" name="a2">选项4</label>
+                </li>
+                <li>
+                    <label><input type="radio" value="5" name="a2">选项5</label>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--@@ include("inc/static.html") -->
+    <script src="www/scripts/plugins/form/checkbox_radio.js"></script>
+    <script>
+        $('input').moyuCR();
+        $('input[type="checkbox"]').eq(1).moyuCR('destroy');
+        $('input[type="checkbox"]').eq(2).moyuCR('setChecked', true);
+        $('input[type="checkbox"]').eq(3).moyuCR('setDisabled', true);
+    </script>
+</body>
+</html>

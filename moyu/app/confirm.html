@@ -1,0 +1,185 @@
+<!doctype html>
+<html class="confirm">
+<head>
+<!--@@ include("inc/head.html", {"title": "确认订单", "keywords": "keywords", "description": "description"}) -->
+<!-- build:css /www/styles/confirm.css -->
+<link type="text/css" rel="stylesheet" href="/www/styles/address.css">
+<link type="text/css" rel="stylesheet" href="/www/styles/confirm.css">
+<!-- endbuild -->
+</head>
+
+<body>
+    <div class="container row">
+        <!--@@ include("inc/header.html") -->
+        <div class="mainbody row bg-eee">
+            <div class="wrapper">
+                <!-- 确认订单 -->
+                <div class="confirm-box row">
+                    <h1 class="row">确认订单</h1>
+                    <div class="confirm-item confirm-item-addr">
+                        <div class="title">收货地址</div>
+                        <div class="moyu-addrs js-addrs" data-canchecked="moyaddr_checked_input"></div>
+                        <div class="address-more row js-address-more">
+                            <a href="javascript:;" class="f-14 c-666"><i class="icon-address-more"></i>更多地址</a>
+                        </div>
+                    </div>
+                    <div class="confirm-item">
+                        <div class="title">支付方式</div>
+                        <div class="value">在线支付</div>
+                    </div>
+                    <div class="confirm-item">
+                        <div class="title">配送方式</div>
+                        <div class="value">普通快递配送</div>
+                    </div>
+                    <div class="confirm-item">
+                        <div class="title">发票</div>
+                        <div class="value">如需发票请发送邮件至moyukefu@baofeng.com，邮件正文说明订单号和发票抬头。</div>
+                    </div>
+                    <div class="confirm-item">
+                        <div class="title">商品信息</div>
+                        <a href="/cart.html" class="f-12 fr" target="_blank">返回购物车 &raquo;</a>
+                        <div class="confirm-product row">
+                            <table border="0" cellspacing="0" cellpadding="0">
+                                <thead>
+                                    <tr>
+                                        <th class="w1 first">商品</th>
+                                        <th class="w2">单价</th>
+                                        <th class="w3">数量</th>
+                                        <th class="w4">小计</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="js-goods">
+                                    <tr data-goodsid="10008" data-total="398">
+                                        <td>
+                                            <div class="product-info">
+                                                <div class="image"><img src="www/images/detail/3s.jpg" width="98" height="98"></div>
+                                                <div class="info">
+                                                    <h3 class="f-14">小黄人耳机</h3>
+                                                    <p class="c-666">颜色：黄白  尺寸：小号</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="c-e73d4d">199元</td>
+                                        <td>2</td>
+                                        <td class="c-e73d4d">398元</td>
+                                    </tr>
+                                    <tr data-goodsid="10009" data-total="223.56">
+                                        <td>
+                                            <div class="product-info">
+                                                <div class="image"><img src="www/images/detail/2s.jpg" width="98" height="98"></div>
+                                                <div class="info">
+                                                    <h3 class="f-14">小黄人耳机</h3>
+                                                    <p class="c-666">颜色：黄白  尺寸：小号</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="c-e73d4d">199元</td>
+                                        <td>2</td>
+                                        <td class="c-e73d4d">223.56元</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="confirm-item confirm-item-coupon">
+                        <div class="title">使用优惠券</div>
+                        <a href="/cart.html" class="f-12 fr" target="_blank">查看使用规则 &raquo;</a>
+                        <div class="confirm-coupon row">
+                            <table border="0" cellspacing="0" cellpadding="0">
+                                <thead>
+                                    <tr>
+                                        <th>可用优惠券</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="js-coupons">
+                                            <ul>
+                                                <li>
+                                                    <label>
+                                                        <input type="radio" name="coupon" value="123" data-money="20" data-goods="10008" class="js-rewrite">
+                                                        <span class="p20">全品大促券</span>
+                                                        <span class="p20">可优惠：20</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label>
+                                                        <input type="radio" name="coupon" value="124" data-money="10" data-goods="10008,10009" class="js-rewrite">
+                                                        <span class="p20">全品大促券</span>
+                                                        <span class="p20">可优惠：10</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="title">我有优惠券码</div>
+                        <div class="add-coupon row">
+                            <form>
+                                <input type="text" placeholder="请输入优惠券码">
+                                <button type="button" id="js-new-coupon">绑定优惠券</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="confirm-item confirm-item-yue">
+                        <div class="title">使用余额</div>
+                        <div class="row f-14">
+                            <label>
+                                <input type="checkbox" name="use_yue" checked value="8" id="js-yue-num" class="js-rewrite">
+                                使用余额
+                                账户当前余额：<span class="c-df1f26">300</span>元
+                                本单最多可用：<span class="c-df1f26 f-20">8</span>元
+                            </label>
+                        </div>
+                    </div>
+                    <div class="confirm-item confirm-item-total row">
+                        <table border="0" cellspacing="0" cellpadding="0" align="right">
+                            <tr>
+                                <th>商品件数</th>
+                                <td>2件</td>
+                            </tr>
+                            <tr>
+                                <th>总金额</th>
+                                <td>¥<span id="js-total">621.56</span></td>
+                            </tr>
+                            <tr>
+                                <th>运费</th>
+                                <td>+<span id="js-freight">11</span>元</td>
+                            </tr>
+                            <tr>
+                                <th>优惠券抵扣</th>
+                                <td>-<span id="js-coupon-total">20</span>元</td>
+                            </tr>
+                            <tr>
+                                <th>余额抵扣</th>
+                                <td>-<span id="js-yue-total">8</span>元</td>
+                            </tr>
+                            <tr>
+                                <th>应付</th>
+                                <td><span class="f-24 c-e73d4d" id="js-pay-total">378.00</span><span class="c-e73d4d">元</span></td>
+                            </tr>
+                            <tr>
+                                <th colspan="2">
+                                    <button type="button" class="btn-red-large" id="js-confirm-submit">提交订单</button>
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <!-- /确认订单 -->
+            </div>
+        </div>
+        <!--@@ include("inc/footer.html") -->
+    </div>
+    <!--@@ include("inc/static.html") -->
+    <!-- build:js /www/scripts/confirm.js -->
+    <script src="/www/scripts/plugins/form/checkbox_radio.js"></script>
+    <script src="/www/scripts/ajax.js"></script>
+    <script src="/www/scripts/china_addr.js"></script>
+    <script src="/www/scripts/address.js"></script>
+    <script src="/www/scripts/confirm.js"></script>
+    <!-- endbuild -->
+</body>
+</html>
