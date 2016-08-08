@@ -1,0 +1,79 @@
+<!doctype html>
+<html class="user bg-f1f1f1">
+<head>
+<!--@@ include("inc/head.html", {"title": "我的余额", "keywords": "keywords", "description": "description"}) -->
+<!-- build:css /h5/styles/user.css -->
+<link type="text/css" rel="stylesheet" href="/h5/styles/user.css">
+<!-- endbuild -->
+</head>
+
+<body>
+    <div class="container row">
+        <header class="header-has-home row bg-fff">
+            <a href="javascript:;" class="back js-history-go">
+                <!--@@ include("inc/svg.html", {"file": "arrow-left"}) -->
+            </a>
+            <h1 class="f-18">我的余额</h1>
+        </header>
+        <article class="article article-pt row">
+            <div class="user-yue row bg-fff">
+                <div class="title">
+                    <div class="total">
+                        <div class="inner">
+                            <span class="f-14 c-999">余额（元）</span>
+                            <span class="f-24">206.80</span>
+                        </div>
+                    </div>
+                    <a href="#" class="user-yue-help f-12"><i>?</i>使用说明</a>
+                    <div class="timer row f-13">
+                        有效期：<span class="c-999">2016-09-25 00:00:00 ~ 2016-10-15 23:59:59</span>
+                    </div>
+                </div>
+                <div class="add-yue row">
+                    <form>
+                        <input type="text" placeholder="请输入兑换码" id="js-yue-input">
+                        <button type="button" id="js-new-yue">兑 换</button>
+                    </form>
+                </div>
+                <div class="list row">
+                    <h2 class="row f-14">余额明细</h2>
+                    <ul class="row f-12">
+                        <li class="row">
+                            <span class="fl">
+                                暴风10周年活动抽奖红包<br>
+                                <span class="c-999">2016-09-04  12:56:23</span>
+                            </span>
+                            <span class="fr c-df1f26">+200</span>
+                        </li>
+                        <li class="row">
+                            <span class="fl">
+                                暴风10周年活动抽奖红包<br>
+                                <span class="c-999">2016-09-04  12:56:23</span>
+                            </span>
+                            <span class="fr c-df1f26">+20.90</span>
+                        </li>
+                        <li class="row">
+                            <span class="fl">
+                                订单【35698745】未支付返还<br>
+                                <span class="c-999">2016-09-04  12:56:23</span>
+                            </span>
+                            <span class="fr c-df1f26">+20.00</span>
+                        </li>
+                        <li class="row">
+                            <span class="fl">
+                                订单【35698745】使用余额<br>
+                                <span class="c-999">2016-09-04  12:56:23</span>
+                            </span>
+                            <span class="fr c-df1f26">-30.00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+    </div>
+    <!--@@ include("inc/static.html") -->
+    <!-- build:js /h5/scripts/user_yue.js -->
+    <script src="/h5/scripts/user_yue.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+a.history-go { width: 1.75rem; height: 1.75rem; color: #e0e0e0; font-size: 1.75rem; margin: 1rem; display: block; }
+.empty-info { width: 75%; margin: 10% auto 0; line-height: 180%; }
+.empty-info a { display: inline-block; }
+.empty-info li:first-child { margin-bottom: 1rem; }
+.empty-info li:last-child { margin-top: 1.5rem; }
+.empty-info .img { width: 100%; margin: 0 auto; padding-right: 0.25rem; }
+.empty-info .t { border-bottom: 1px #cccccc solid; text-align: center; padding-bottom: 1rem; }
+.empty-info .r { position: relative; padding-left: 20%; margin-top: 0.6rem; }
+.empty-info .r dt { position: absolute; left: 0; top: 0; }
+.empty-info .i { color: #cccccc; }
+.empty-info .l a:first-child { float: left; }
+.empty-info .l a:last-child { float: right; }

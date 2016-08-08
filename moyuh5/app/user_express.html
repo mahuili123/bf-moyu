@@ -1,0 +1,54 @@
+<!doctype html>
+<html class="user bg-f1f1f1">
+<head>
+<!--@@ include("inc/head.html", {"title": "订单跟踪", "keywords": "keywords", "description": "description"}) -->
+<!-- build:css /h5/styles/user.css -->
+<link type="text/css" rel="stylesheet" href="/h5/styles/user.css">
+<!-- endbuild -->
+</head>
+
+<body>
+    <div class="container row">
+        <header class="header-has-home row bg-fff">
+            <a href="javascript:;" class="back js-history-go">
+                <!--@@ include("inc/svg.html", {"file": "arrow-left"}) -->
+            </a>
+            <h1 class="f-18">订单跟踪</h1>
+        </header>
+        <article class="article article-pt2 row">
+            <div class="user-back-detail row f-14">
+                <div class="item item-express plr-65">
+                    <div class="icar"><!--@@ include("inc/svg.html", {"file": "car"}) --></div>
+                    订单状态：<span class="c-df1f26">正在出库</span>
+                </div>
+                <div class="item express">
+                    <ol class="row">
+                        <li class="row">
+                            <i></i>
+                            <div class="line">
+                                商品正在出库，操作人：xxx<br>
+                                <span class="f-12">2015-1-22 23:30:00</span>
+                            </div>
+                        </li>
+                        <li class="row">
+                            <i></i>
+                            <div class="line">
+                                订单支付成功，正在配货中<br>
+                                <span class="f-12">2015-1-22 23:30:00</span>
+                            </div>
+                        </li>
+                        <li class="row">
+                            <i></i>
+                            <div class="line">
+                                您提交了订单，请尽快支付<br>
+                                <span class="f-12">2015-1-22 23:30:00</span>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </article>
+    </div>
+    <!--@@ include("inc/static.html") -->
+</body>
+</html>

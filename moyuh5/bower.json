@@ -1,0 +1,29 @@
+{
+  "name": "fe.moyu.com",
+  "version": "0.0.1",
+  "authors": [
+    "myestorm <chenwenxue@baofeng.com>"
+  ],
+  "description": "暴风魔娱前端代码库",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "moyu",
+    "fe"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "3.1.0"
+  },
+  "overrides": {},
+  "devDependencies": {
+  }
+}

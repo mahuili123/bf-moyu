@@ -1,0 +1,219 @@
+<!doctype html>
+<html class="detail bg-f1f1f1">
+<head>
+<!--@@ include("inc/head.html", {"title": "暴风超体电视 40F1", "keywords": "keywords", "description": "description"}) -->
+<!-- build:css /h5/styles/index.css -->
+<link type="text/css" rel="stylesheet" href="/h5/styles/index.css">
+<link type="text/css" rel="stylesheet" href="/h5/styles/class_merge.css">
+<link type="text/css" rel="stylesheet" href="/h5/styles/detail.css">
+<!-- endbuild -->
+</head>
+
+<body>
+    <div class="container row">
+        <article class="row detail-body">
+            <header class="detail-header row">
+                <a href="/" class="history-go js-history-go"><!--@@ include("inc/svg.html", {"file": "arrow-left"}) --></a>
+                <a href="/" class="detail-bingo js-history-go"><!--@@ include("inc/svg.html", {"file": "bingo"}) --></a>
+                <!-- 焦点图 -->
+                <div class="row index-slider js-index-slider">
+                    <div class="slides-ul" id="js-slides">
+                        <div class="item" style="background-image:url(h5/images/demo/10.jpg); background-color:#f7d30f;"><a href="#1">标题一</a></div>
+                        <div class="item" style="background-image:url(h5/images/demo/11.jpg); background-color:#000000;"><a href="#2">标题二</a></div>
+                        <div class="item" style="background-image:url(h5/images/demo/12.jpg); background-color:#ffffff;"><a href="#3">标题三</a></div>
+                        <div class="item" style="background-image:url(h5/images/demo/13.jpg); background-color:#f7d30f;"><a href="#4">标题四</a></div>
+                        <div class="item" style="background-image:url(h5/images/demo/14.jpg); background-color:#000000;"><a href="#5">标题五</a></div>
+                    </div>
+                </div>
+                <!-- /焦点图 -->
+            </header>
+            <div class="detail-info row bg-fff">
+                <h1 class="f-16">暴风超体电视 40F1</h1>
+                <div class="intro f-13 c-999">十核芯片/ 语音遥控/ 原装屏广色域</div>
+                <div class="price c-df1f26 f-18">¥4899</div>
+            </div>
+            <div class="buy-area row bg-fff f-14" id="js-buy-area">
+                <ul>
+                    <li class="row" id="js-dim-position">
+                        <label class="label">选择数量</label>
+                        <div class="form">
+                            <div class="my-input-number" id="js-my-input-number" data-min="1" data-max="4">
+                                <a href="javascript:;" class="cut">-</a>
+                                <input type="text" value="1">
+                                <a href="javascript:;" class="add">+</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="more-detail row bg-fff">
+                <img src="/h5/images/demo/15.jpg">
+            </div>
+        </article>
+        <div class="detail-footer row bg-fff">
+            <button class="btn-white-middle" id="js-add-cart" disabled>暂时缺货</button>
+            <a href="/" class="detail-footer-home"><!--@@ include("inc/svg.html", {"file": "home"}) --></a>   
+            <a href="/" class="detail-footer-cart"><!--@@ include("inc/svg.html", {"file": "cart"}) --></a>    
+        </div>
+    </div>
+    <div class="js-gotop gotop">
+        <a href="javascript:;">
+            <!--@@ include("inc/svg.html", {"file": "arrow-top"}) -->
+        </a>
+    </div>
+    <script>
+    var $CONFIG = {
+        parms: [{
+            id: '123',
+            name: '颜色',
+            list: [{
+                id: '1',
+                name: '01号公仔'
+            }, {
+                id: '2',
+                name: '02号公仔'
+            }, {
+                id: '3',
+                name: '03号公仔'
+            }, {
+                id: '4',
+                name: '灰色'
+            }, {
+                id: '5',
+                name: '04号公仔'
+            }, {
+                id: '6',
+                name: '05号公仔'
+            }, {
+                id: '7',
+                name: '06号公仔'
+            }, {
+                id: '8',
+                name: '08号公仔'
+            }, {
+                id: '9',
+                name: '09号公仔'
+            }]
+        }, {
+            id: '124',
+            name: '尺寸',
+            list: [{
+                id: '1',
+                name: '10cm'
+            }, {
+                id: '2',
+                name: '20cm'
+            }, {
+                id: '3',
+                name: '30cm'
+            }, {
+                id: '4',
+                name: '40cm'
+            }, {
+                id: '5',
+                name: '50cm'
+            }, {
+                id: '6',
+                name: '60cm'
+            }, {
+                id: '7',
+                name: '70cm'
+            }, {
+                id: '8',
+                name: '80cm'
+            }]
+        }, {
+            id: '125',
+            name: '包装',
+            list: [{
+                id: '1',
+                name: '普通'
+            }, {
+                id: '2',
+                name: '豪华'
+            }, {
+                id: '3',
+                name: '超级豪华'
+            }]
+        }],
+        products: [{
+            sku: '123456',
+            stock: '0',
+            price: '2000',
+            parms: [{
+                pid: '123',
+                sid: '1'
+            }, {
+                pid: '124',
+                sid: '1'
+            }, {
+                pid: '125',
+                sid: '1'
+            }]
+        }, {
+            sku: '123457',
+            stock: '0',
+            price: '2001',
+            parms: [{
+                pid: '123',
+                sid: '1'
+            }, {
+                pid: '124',
+                sid: '1'
+            }, {
+                pid: '125',
+                sid: '2'
+            }]
+        }, {
+            sku: '123458',
+            stock: '0',
+            price: '2003',
+            parms: [{
+                pid: '123',
+                sid: '2'
+            }, {
+                pid: '124',
+                sid: '1'
+            }, {
+                pid: '125',
+                sid: '2'
+            }]
+        }, {
+            sku: '123459',
+            stock: '0',
+            price: '2004',
+            parms: [{
+                pid: '123',
+                sid: '2'
+            }, {
+                pid: '124',
+                sid: '2'
+            }, {
+                pid: '125',
+                sid: '3'
+            }]
+        }, {
+            sku: '123460',
+            stock: '0',
+            price: '2005',
+            parms: [{
+                pid: '123',
+                sid: '2'
+            }, {
+                pid: '124',
+                sid: '3'
+            }, {
+                pid: '125',
+                sid: '3'
+            }]
+        }]
+    };
+    </script>
+    <!--@@ include("inc/static.html") -->
+    <!-- build:js /h5/scripts/detail.js -->
+    <script src="/h5/scripts/plugins/slidesjs/jquery.slides.js"></script>
+    <script src="/h5/scripts/plugins/hammer/hammer.js"></script>
+    <script src="/h5/scripts/detail.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

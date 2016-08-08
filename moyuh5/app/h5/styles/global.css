@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+/*全局配置*/
+* { box-sizing: border-box; }
+*::after, *::before { box-sizing: border-box; }
+
+html { width: 100%; margin: 0; padding: 0; font-size: 16px; font-family: "Hiragino Sans GB", "微软雅黑", "Microsoft Yahei", Simsun, "宋体", Arial, Helvetica, sans-serif; color: #333333; line-height: 150%; background: #ffffff; }
+body { padding: 0; margin: 0; }
+
+ul, ol, li, dl, dd, dt, h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; list-style: none; }
+input, select, button, textarea { font-family: "Hiragino Sans GB","微软雅黑","Microsoft Yahei"; }
+a { text-decoration: none; }
+a:link, a:visited { color: #333333; }
+/*a:hover, */a:active { color: #df1f26; }
+
+.img img { width: 100%; display: block; }
+
+.row { width: 100%; float: left; clear: both; }
+.fl { float: left; }
+.fr { float: right; }
+
+/* background */
+.bg-f1f1f1 { background: #f1f1f1; }
+.bg-fff { background: #ffffff; }
+
+/* font size */
+.f-30 { font-size: 1.875rem; }
+.f-24 { font-size: 1.5rem; }
+.f-22 { font-size: 1.375rem; }
+.f-20 { font-size: 1.25rem; }
+.f-18 { font-size: 1.125rem; }
+.f-16 { font-size: 1rem; }
+.f-15 { font-size: 0.9375rem; }
+.f-14 { font-size: 0.875rem; }
+.f-13 { font-size: 0.8125rem; }
+.f-12 { font-size: 0.75rem; }
+
+.t-c { text-align: center; }
+.t-l { text-align: left; }
+.t-r { text-align: right; }
+
+/* font color */
+.c-999, .c-999:link, .c-999:visited { color: #999999; }
+
+.c-666, .c-666:link, .c-666:visited { color: #666666; }
+
+.c-ff3333, .c-ff3333:link, .c-ff3333:visited { color: #ff3333; }
+
+.c-df1f26, .c-df1f26:link, .c-df1f26:visited { color: #df1f26; }
+.c-e73d4d, .c-e73d4d:link, .c-e73d4d:visited { color: #e73d4d; }
+
+/* btn */
+.btn-red-middle, a.btn-red-middle { background: #df1f26; color: #ffffff; line-height: 2.4rem; padding: 0 1rem; border: 0; cursor: pointer; border-radius: 1px; font-size: 1rem; }
+.btn-red-small, a.btn-red-small { background: #df1f26; color: #ffffff; line-height: 1.5rem; padding: 0 1rem; border: 0; cursor: pointer; border-radius: 1px; font-size: 0.8125rem; }
+.btn-white-middle, a.btn-white-middle { background: #ffffff; color: #333333; line-height: 2.4rem; padding: 0 1rem; border: 1px #cccccc solid; cursor: pointer; border-radius: 1px; font-size: 1rem; }
+.btn-white-small, a.btn-white-small { background: #ffffff; color: #333333; line-height: 1.5rem; padding: 0 1rem; border: 0; cursor: pointer; border-radius: 1px; font-size: 0.8125rem; border: 1px #cccccc solid; }
+
+/* icon svg */
+.icon-svg { width: 1em; height: 1em; fill: currentColor; }
+
+/* header */
+.header { height: 2.5rem; }
+.header a { width: 6.5625rem; height: 100%; line-height: 2.5rem; display: block; font-size: 1rem; padding: 0 0.75rem; position: relative; }
+.header .logo { width: 100%; height: 2.5rem; background: url(../images/global/logo.png) no-repeat 0 center #ffffff; background-size: 100% auto; display: block; position: absolute; left: 0.75rem; top: 0; }
+
+/* header-has-home */
+.header-has-home { position: fixed; left: 0; top: 0; height: 2.75rem; overflow: hidden; text-align: center; line-height: 2.75rem; box-shadow: 0 0 0.15rem rgba(0,0,0,0.15); z-index: 9; }
+.header-has-home h1 { font-weight: normal; }
+.header-has-home a { font-size: 1rem; position: absolute; top: 0; padding: 0 1rem; text-align: center; }
+.header-has-home .back { left: 0; }
+.header-has-home .gohome { right: 0; font-size: 1.2rem; }
+
+/* nav-footer */
+.nav-footer { position: fixed; left: 0; bottom: 0; border-top: 1px #cccccc solid; height: 3.125rem; overflow: hidden; background: #ffffff; }
+.nav-footer li { width: 25%; height: 100%; text-align: center; float: left; line-height: 100%; }
+.nav-footer li a { display: block; height: 100%; padding-top: 0.4rem; }
+.nav-footer li strong { font-weight: normal; display: block; font-size: 0.875rem; color: #999999; }
+.nav-footer .icon-svg { font-size: 1.25rem; }
+.nav-footer li.current strong, .nav-footer li.current .icon-svg { color: #df1f26; }
+.article-pb { padding-bottom: 3.125rem; }
+.article-pt { padding-top: 3.75rem; }
+.article-pt2 { padding-top: 2.75rem; }
+
+/*checkbox radio*/
+.moyu-checkbox { border: 1px #b1b1b1 solid; border-radius: 100%; overflow: hidden; background: #ffffff; }
+.moyu-checkbox .icon-svg-checkbox-checked { width: 80%; height: 80%; position: absolute; left: 10%; top: 12%; display: none; }
+.moyu-checkbox.checked { border-color: #df1f26; background: #df1f26; }
+.moyu-checkbox.checked .icon-svg-checkbox-checked { display: block; }
+.moyu-checkbox.disabled { border-color: #a3a3a3; background: #e3e3e3; }
+.moyu-checkbox.checked.disabled { border-color: #a3a3a3; background: #e3e3e3; }
+.moyu-checkbox.checked.disabled .icon-svg-checkbox-checked { display: none; }
+
+.moyu-radio { border: 1px #b1b1b1 solid; border-radius: 100%; overflow: hidden; background: #ffffff; }
+.moyu-radio .icon-svg-radio-checked { width: 80%; height: 80%; position: absolute; left: 10%; top: 12%; display: none; }
+.moyu-radio.checked { border-color: #df1f26; background: #df1f26; }
+.moyu-radio.checked .icon-svg-radio-checked { display: block; }
+.moyu-radio.disabled { border-color: #a3a3a3; background: #e3e3e3; }
+.moyu-radio.checked.disabled { border-color: #a3a3a3; background: #e3e3e3; }
+.moyu-radio.checked.disabled .icon-svg-radio-checked { display: none; }
+
+/* alert confirm */
+.moyu-sysinfo-box { width: 100%; height: 100%; position: absolute; left: 0; top: 0; background: rgba(0,0,0,0.5); z-index: 99; }
+.moyu-sysinfo { width: 90%; background: #ffffff; position: fixed; left: 5%; top: 30%; padding-bottom: 2rem; }
+.moyu-sysinfo .title { width: 100%; height: 2.4rem; }
+.moyu-sysinfo .title a.close { position: absolute; right: 1rem; top: 0.8rem; }
+.moyu-sysinfo .info { padding: 0.5rem 1rem 1.5rem; font-size: 1rem; text-align: center; }
+.moyu-sysinfo .btns { text-align: center; }
+.moyu-sysinfo .btns button { padding: 0 2rem; text-align: center; font-size: 1rem; height: 2.6rem; cursor: pointer; margin: 0 1rem; transition: background 0.3s; border-radius: 2px; }
+.moyu-sysinfo .btns .ok { color: #ffffff; background: #df1f26; border: 1px #df1f26 solid; }
+.moyu-sysinfo .btns .ok:active { background: #ab0006; }
+.moyu-sysinfo .btns .canncel { color: #df1f26; background: #ffffff; border: 1px #cccccc solid; }
+.moyu-sysinfo .btns .canncel:active { background: #eaeaea; }
+
+.moyu-flash-info { width: 232px; height: 82px; position: fixed; left: 50%; top: 50%; margin: -41px 0 0 -136px; background: url(../images/bg/blank50.png); color: #ffffff; text-align: center; line-height: 82px; font-size: 18px; border-radius: 10px; padding: 0 20px; }

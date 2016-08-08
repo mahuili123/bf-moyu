@@ -1,0 +1,144 @@
+<!doctype html>
+<html class="confirm bg-f1f1f1">
+<head>
+<!--@@ include("inc/head.html", {"title": "订单结算", "keywords": "keywords", "description": "description"}) -->
+<!-- build:css /h5/styles/cart.css -->
+<link type="text/css" rel="stylesheet" href="/h5/styles/cart.css">
+<!-- endbuild -->
+</head>
+
+<body>
+    <div class="container row">
+        <header class="header-has-home row bg-fff">
+            <a href="javascript:;" class="back js-history-go">
+                <!--@@ include("inc/svg.html", {"file": "arrow-left"}) -->
+            </a>
+            <h1 class="f-18">订单结算</h1>
+        </header>
+        <article class="article confirm-body row">
+            <div class="item row bg-fff confirm-addrs">
+                <a href="addr_list.html" class="row plr1 ptb1 has-more-icon">
+                    <dl>
+                        <dt class="f-14">收货人：陈星星 158****5637</dt>
+                        <dd class="c-999 f-12">
+                            <!--@@ include("inc/svg.html", {"file": "location"}) -->
+                            <span class="text">北京  北京市  海淀区  学院路51号首享科技大厦13层108(100020)</span>
+                        </dd>
+                    </dl>
+                    <!--@@ include("inc/svg.html", {"file": "arrow-right"}) -->
+                </a>
+            </div>
+            <div class="item row bg-fff confirm-coupon f-14">
+                <ul>
+                    <li>
+                        <label class="t">配送方式</label>
+                        <div class="v">快递：0元</div>
+                    </li>
+                    <li>
+                        <label class="t">使用优惠券</label>
+                        <div class="c">
+                            <a href="#" class="row has-more-icon">
+                                无可用
+                                <!--@@ include("inc/svg.html", {"file": "arrow-right"}) -->
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="t"><input type="checkbox" class="js-rewrite"> 使用余额</label>
+                        <div class="fl c-df1f26">本单不可用</div>
+                        <div class="fr">当前余额300元</div>
+                    </li>
+                    <li>
+                        <label class="t">发票</label>
+                        <div class="v">如需发票请发送邮件(订单号、发票抬头)至<br>moyukefu@baofeng.com</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="item row bg-fff confirm-products f-14">
+                <table class="plr1">
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">
+                                <div class="img img180180"><img src="h5/images/demo/180x180.jpg"></div>
+                            </td>
+                            <td>大白背包-黑红两色</td>
+                            <td class="t-r c-df1f26">¥99 </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="c-999">颜色：红 </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="t-r">×2</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="plr1">
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">
+                                <div class="img img180180"><img src="h5/images/demo/180x180.jpg"></div>
+                            </td>
+                            <td>大白背包-黑红两色</td>
+                            <td class="t-r c-df1f26">¥4999  </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="c-999">颜色：红 </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="t-r">×2</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="item row bg-fff ptb1 plr1 confirm-total f-14">
+                <ul>
+                    <li>商品件数：1件</li>
+                    <li>总金额：¥5098</li>
+                    <li>优惠券抵扣：-30元</li>
+                    <li>余额抵扣：-30元</li>
+                    <li>运费：+0元</li>
+                </ul>
+            </div>
+            <div class="item row bg-fff confirm-payway f-14">
+                <ul>
+                    <li class="row">
+                        <label class="b">
+                            <!--@@ include("inc/svg.html", {"file": "alipay"}) -->
+                            支付宝
+                            <label class="fr">
+                                <input type="radio" name="payway" class="js-rewrite">
+                            </label>
+                        </label>
+                    </li>
+                    <li class="row">
+                        <label class="b">
+                            <!--@@ include("inc/svg.html", {"file": "weixin"}) -->
+                            微信支付
+                            <label class="fr">
+                                <input type="radio" name="payway" class="js-rewrite">
+                            </label>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <footer class="confirm-footer bg-fff row">
+            <table>
+                <tr>
+                    <td>应付金额 : <span class="c-df1f26">¥5038</span></td>
+                    <td class="t-r">
+                        <button type="button" class="btn-red-middle" id="js-pay">去付款</button>
+                    </td>
+                </tr>
+            </table>
+        </footer>
+    </div>
+    <!--@@ include("inc/static.html") -->
+    <!-- build:js /h5/scripts/confirm.js -->
+    <script src="/h5/scripts/plugins/form/checkbox_radio.js"></script>
+    <script src="h5/scripts/ajax.js"></script>
+    <script src="/h5/scripts/confirm.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

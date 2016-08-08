@@ -1,0 +1,84 @@
+<!doctype html>
+<html class="confirm bg-f1f1f1">
+<head>
+<!--@@ include("inc/head.html", {"title": "订单结算", "keywords": "keywords", "description": "description"}) -->
+<!-- build:css /h5/styles/cart.css -->
+<link type="text/css" rel="stylesheet" href="/h5/styles/cart.css">
+<!-- endbuild -->
+</head>
+
+<body>
+    <div class="container row">
+        <header class="header-has-home row bg-fff">
+            <a href="javascript:;" class="back js-history-go">
+                <!--@@ include("inc/svg.html", {"file": "arrow-left"}) -->
+            </a>
+            <h1 class="f-18">添加/修改收货地址</h1>
+        </header>
+        <article class="article confirm-body-addr row">
+            <ul class="row bg-fff addr-form f-14">
+                <li class="row">
+                    <label class="title">收货姓名</label>
+                    <div class="form-item">
+                        <input type="text" value="韩梅梅">
+                    </div>
+                </li>
+                <li class="row">
+                    <label class="title">手机号码</label>
+                    <div class="form-item">
+                        <input type="text" value="15623322556">
+                    </div>
+                </li>
+                <li class="row">
+                    <label class="title">所在地区</label>
+                    <div class="form-item">
+                        <input type="text" name="addr_link" value="北京 北京市 海淀区">
+                        <input type="hidden" name="user_address_link_province_id" value="">
+                        <input type="hidden" name="user_address_link_province_name" value="">
+                        <input type="hidden" name="user_address_link_city_id" value="">
+                        <input type="hidden" name="user_address_link_city_name" value="">
+                        <input type="hidden" name="user_address_link_area_id" value="">
+                        <input type="hidden" name="user_address_link_area_name" value="">
+                        <!--@@ include("inc/svg.html", {"file": "arrow-right"}) -->
+                        <a href="#" class="china-addr-link"></a>
+                    </div>
+                </li>
+                <li class="row">
+                    <label class="title">详细地址</label>
+                    <div class="form-item">
+                        <input type="text" value="" placeholder="详细地址，路名或街道名，门牌号">
+                    </div>
+                </li>
+            </ul>
+        </article>
+        <footer class="addr-footer bg-fff row">
+            <button class="btn-red-middle" id="js-submit">保存并使用</button>
+        </footer>
+    </div>
+    <div class="china-addr-box">
+        <div class="china-addr">
+            <a href="javascript:;" class="close"><!--@@ include("inc/svg.html", {"file": "remove"}) --></a>
+            <a href="javascript:;" class="back"><!--@@ include("inc/svg.html", {"file": "arrow-left"}) --></a>
+            <div class="title">
+                请选择区
+            </div>
+            <div class="china-addr-desk">
+                <div class="item province">
+                    <ul></ul>
+                </div>
+                <div class="item city">
+                    <ul></ul>
+                </div>
+                <div class="item area">
+                    <ul></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--@@ include("inc/static.html") -->
+    <!-- build:js /h5/scripts/addr_add.js -->
+    <script src="/h5/scripts/china_addr.js"></script>
+    <script src="/h5/scripts/addr_add.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

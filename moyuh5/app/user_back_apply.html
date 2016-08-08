@@ -1,0 +1,72 @@
+<!doctype html>
+<html class="user bg-f1f1f1">
+<head>
+<!--@@ include("inc/head.html", {"title": "退货详情", "keywords": "keywords", "description": "description"}) -->
+<!-- build:css /h5/styles/user.css -->
+<link type="text/css" rel="stylesheet" href="/h5/styles/user.css">
+<!-- endbuild -->
+</head>
+
+<body>
+    <div class="container row">
+        <header class="header-has-home row bg-fff">
+            <a href="javascript:;" class="back js-history-go">
+                <!--@@ include("inc/svg.html", {"file": "arrow-left"}) -->
+            </a>
+            <h1 class="f-18">退货申请</h1>
+        </header>
+        <article class="article article-pt row">
+            <div class="user-back-apply row f-14">
+                <div class="item item-info">
+                    <div class="img"><a href="#"><img src="h5/images/demo/180x180.jpg"></a></div>
+                    <div class="bname f-13">
+                        <a href="#">大白背包-黑红两色</a><br>
+                        <span class="c-999">颜色：红，配件： 大白系列摆件、大白手办，会员：3个月  </span>   <br>
+                        <span class="m">×2 &nbsp;&nbsp;&nbsp;&nbsp; <span class="c-999">实付金额</span> <span class="c-df1f26">¥99</span>  </span>
+                    </div>
+                </div>
+                <div class="item item-num plr-65">
+                    <span class="fl">申请数量：</span>
+                    <div class="number">
+                        <div class="moyu-input-number" data-min="1" data-max="3">
+                            <a href="javascript:;" class="cut">-</a>
+                            <input type="number" value="3" disabled data-mgs="您最多可退货的数量为3个">
+                            <a href="javascript:;" class="add">+</a>
+                        </div>
+                    </div>
+                    <span class="c-999">您最多可退货的数量为2个</span>
+                </div>
+                <div class="item item-textarea plr-65">
+                    <div class="title">
+                        <em class="c-df1f26">*</em> 问题描述：<span class="error"><i>!</i>不可以为空！</span>
+                    </div>
+                    <div class="textarea"><textarea placeholder="请描述您遇到的问题，10-500个字"></textarea></div>
+                </div>
+                <div class="item item-pic">
+                    <h4 class="row plr-65">上传照片 </h4>
+                    <div class="imgs row js-imgs plr-65">
+                        <ul id="img-thumb-list">
+                            <li class="add"><a href="javascript:;" class="js-upload-img"><span>+</span>添加照片</a><input type="file" name="image_file" id="image-file"></li>
+                        </ul>
+                        <p class="c-999 f-12 row">最多上传5张,每张不超过5M, 支持JPG、PNG和BMP</p>
+                    </div>
+                    <div class="contact row plr-65">
+                        <ul>
+                            <li><em class="c-df1f26">*</em> 联系人： <input type="text" value="陈晓于"> <span class="error"><i>!</i>不可以为空！</span></li>
+                            <li><em class="c-df1f26">*</em> 手机号： <input type="text" value="18546662335"> <span class="error"><i>!</i>不可以为空！</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <footer class="user-back-apply-footer bg-fff row">
+            <button class="btn-red-middle" id="js-submit">提交申请</button>
+        </footer>
+    </div>
+    <!--@@ include("inc/static.html") -->
+    <!-- build:js /h5/scripts/user_back_apply.js -->
+    <script src="/h5/scripts/plugins/ajaxfileupload/ajaxfileupload.js"></script>
+    <script src="/h5/scripts/user_back_apply.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

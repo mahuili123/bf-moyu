@@ -1,0 +1,50 @@
+<!doctype html>
+<html class="confirm bg-f1f1f1">
+<head>
+<!--@@ include("inc/head.html", {"title": "订单结算", "keywords": "keywords", "description": "description"}) -->
+<!-- build:css /h5/styles/cart.css -->
+<link type="text/css" rel="stylesheet" href="/h5/styles/cart.css">
+<!-- endbuild -->
+</head>
+
+<body>
+    <div class="container row">
+        <header class="header-has-home row bg-fff">
+            <a href="javascript:;" class="back js-history-go">
+                <!--@@ include("inc/svg.html", {"file": "arrow-left"}) -->
+            </a>
+            <h1 class="f-18">选择优惠券</h1>
+        </header>
+        <article class="article confirm-body-coupon row">
+            <div class="coupon-tabs row">
+                <div class="tabs-nav row bg-fff">
+                    <ul>
+                        <li class="current"><a href="javascript:;"><span>可使用(0)</span></a></li>
+                        <li><a href="javascript:;"><span>不可用(0)</span></a></li>
+                    </ul>
+                    <div class="add-coupon row">
+                        <form>
+                            <input type="text" placeholder="请输入优惠券码">
+                            <button type="button" id="js-new-coupon">绑 定</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="tabs-box row">
+                    <div class="tabs-empty">
+                        <dl>
+                            <dd><div class="img"><img src="h5/images/confirm/empty.png"></div></dd>
+                            <dt>暂时没有可用的优惠券哦！</dt>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+    <!--@@ include("inc/static.html") -->
+    <!-- build:js /h5/scripts/confirm.js -->
+    <script src="/h5/scripts/plugins/form/checkbox_radio.js"></script>
+    <script src="h5/scripts/ajax.js"></script>
+    <script src="/h5/scripts/confirm.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

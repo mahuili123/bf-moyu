@@ -1,0 +1,122 @@
+<!doctype html>
+<html class="confirm bg-f1f1f1">
+<head>
+<!--@@ include("inc/head.html", {"title": "我的优惠券", "keywords": "keywords", "description": "description"}) -->
+<!-- build:css /h5/styles/cart.css -->
+<link type="text/css" rel="stylesheet" href="/h5/styles/cart.css">
+<!-- endbuild -->
+</head>
+
+<body>
+    <div class="container row">
+        <header class="header-has-home row bg-fff">
+            <a href="javascript:;" class="back js-history-go">
+                <!--@@ include("inc/svg.html", {"file": "arrow-left"}) -->
+            </a>
+            <h1 class="f-18">我的优惠券</h1>
+        </header>
+        <article class="article confirm-body-coupon row">
+            <div class="coupon-tabs row">
+                <div class="tabs-nav row bg-fff">
+                    <ul>
+                        <li class="current"><a href="javascript:;"><span>可使用(0)</span></a></li>
+                        <li><a href="javascript:;"><span>已使用/已过期(3)</span></a></li>
+                    </ul>
+                    <div class="add-coupon row">
+                        <form>
+                            <input type="text" placeholder="请输入优惠券码">
+                            <button type="button" id="js-new-coupon">绑 定</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="tabs-box row">
+                    <div class="tabs-item coupon-on">
+                        <ul>
+                            <li class="row checked">
+                                <label for="s1">
+                                    <span class="r2"><span class="r2m"></span></span>
+                                    <span class="r3"><span class="r3m"></span></span>
+                                    <div class="money f-15 c-df1f26">¥<span class="f-30">100</span></div>
+                                    <div class="info c-333333">
+                                        全品促销券
+                                        <p class="f-13">
+                                            满100元可用<br>
+                                            有效期2016.06.16-2016.07.16
+                                        </p>
+                                    </div>
+                                    <div class="intro row">
+                                        <span class="r1"></span>
+                                        仅限购买魔域商城平台的所有商品使用
+                                    </div>
+                                </label>
+                            </li>
+                            <li class="row">
+                                <label for="s2">
+                                    <span class="r2"><span class="r2m"></span></span>
+                                    <span class="r3"><span class="r3m"></span></span>
+                                    <div class="money f-15 c-df1f26">¥<span class="f-30">100</span></div>
+                                    <div class="info c-333333">
+                                        全品促销券
+                                        <p class="f-13">
+                                            满100元可用<br>
+                                            有效期2016.06.16-2016.07.16
+                                        </p>
+                                    </div>
+                                    <div class="intro row">
+                                        <span class="r1"></span>
+                                        仅限购买魔域商城平台的所有商品使用
+                                    </div>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tabs-item">
+                        <ul>
+                            <li class="row">
+                                <span class="r2"><span class="r2m"></span></span>
+                                <span class="r3"><span class="r3m"></span></span>
+                                <div class="money f-15 c-999">¥<span class="f-30">100</span></div>
+                                <div class="info c-999">
+                                    全品促销券
+                                    <p class="f-13">
+                                        满100元可用<br>
+                                        有效期2016.06.16-2016.07.16
+                                    </p>
+                                </div>
+                                <div class="intro row">
+                                    <span class="r1"></span>
+                                    仅限购买魔域商城平台的所有商品使用
+                                </div>
+                                <div class="s f-14">已使用</div>
+                            </li>
+                            <li class="row">
+                                <span class="r2"><span class="r2m"></span></span>
+                                <span class="r3"><span class="r3m"></span></span>
+                                <div class="money f-15 c-999">¥<span class="f-30">100</span></div>
+                                <div class="info c-999">
+                                    全品促销券
+                                    <p class="f-13">
+                                        满100元可用<br>
+                                        有效期2016.06.16-2016.07.16
+                                    </p>
+                                </div>
+                                <div class="intro row">
+                                    <span class="r1"></span>
+                                    仅限购买暴风超体显示40F系列、X战警系列、50F系统、50T高配版商品使用
+                                </div>
+                                <div class="s f-14">已使用</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+    <!--@@ include("inc/static.html") -->
+    <!-- build:js /h5/scripts/confirm.js -->
+    <script src="/h5/scripts/plugins/form/checkbox_radio.js"></script>
+    <script src="h5/scripts/ajax.js"></script>
+    <script src="/h5/scripts/confirm.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

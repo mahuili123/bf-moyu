@@ -1,0 +1,81 @@
+<!doctype html>
+<html class="user bg-f1f1f1">
+<head>
+<!--@@ include("inc/head.html", {"title": "购物车", "keywords": "keywords", "description": "description"}) -->
+<!-- build:css /h5/styles/user.css -->
+<link type="text/css" rel="stylesheet" href="/h5/styles/user.css">
+<!-- endbuild -->
+</head>
+
+<body>
+    <div class="container row">
+        <header class="user-header row">
+            <div class="user-head">
+                <div class="user-head-img">粥</div>
+            </div>
+            <div class="user-name">粥小菜</div>
+        </header>
+        <article class="article article-pb row">
+            <div class="main-nav row bg-fff f-14">
+                <ul>
+                    <li>
+                        <a href="user_order.html">
+                            <div class="i-box"><!--@@ include("inc/svg.html", {"file": "user-all"}) --></div>
+                            全部订单
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user_order.html">
+                            <div class="i-box"><!--@@ include("inc/svg.html", {"file": "user-tag"}) --> <div class="num">9</div></div>
+                            待付款
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user_order.html">
+                            <div class="i-box"><!--@@ include("inc/svg.html", {"file": "user-bag"}) --> <div class="num">5</div></div>
+                            待收货
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="user-nav row bg-fff">
+                <ul>
+                    <li>
+                        <a href="user_vip.html"><div class="i-round"><!--@@ include("inc/svg.html", {"file": "user-v"}) --></div> 暴风VIP充值订单 <!--@@ include("inc/svg.html", {"file": "arrow-right"}) --></a>
+                    </li>
+                    <li>
+                        <a href="user_back.html"><div class="i-round"><!--@@ include("inc/svg.html", {"file": "user-back"}) --></div> 退货 <!--@@ include("inc/svg.html", {"file": "arrow-right"}) --></a>
+                    </li>
+                    <li>
+                        <a href="user_coupon.html"><div class="i-round"><!--@@ include("inc/svg.html", {"file": "user-quan"}) --></div> 我的优惠券 <!--@@ include("inc/svg.html", {"file": "arrow-right"}) --></a>
+                    </li>
+                    <li>
+                        <a href="user_yue.html"><div class="i-round"><!--@@ include("inc/svg.html", {"file": "user-cash"}) --></div> 我的余额 <span class="total">206元</span><!--@@ include("inc/svg.html", {"file": "arrow-right"}) --></a>
+                    </li>
+                    <li>
+                        <a href="user_addr.html"><div class="i-round"><!--@@ include("inc/svg.html", {"file": "user-location"}) --></div> 收货地址管理 <!--@@ include("inc/svg.html", {"file": "arrow-right"}) --></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="user-nav row bg-fff">
+                <ul>
+                    <li>
+                        <a href="#"><div class="i-round"><!--@@ include("inc/svg.html", {"file": "user-online"}) --></div> 在线客服 <!--@@ include("inc/svg.html", {"file": "arrow-right"}) --></a>
+                    </li>
+                    <li>
+                        <a href="tel:400-8888-369"><div class="i-round"><!--@@ include("inc/svg.html", {"file": "user-tel"}) --></div> 客服热线 <span class="tel">400-8888-369</span> <!--@@ include("inc/svg.html", {"file": "arrow-right"}) --></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="user-quit row bg-fff">
+                <a href="#" class="c-df1f26">退出登录</a>
+            </div>
+        </article>
+        <!--@@ include("inc/footer.html") -->
+    </div>
+    <!--@@ include("inc/static.html") -->
+    <!-- build:js /h5/scripts/user.js -->
+    <script src="/h5/scripts/user.js"></script>
+    <!-- endbuild -->
+</body>
+</html>
